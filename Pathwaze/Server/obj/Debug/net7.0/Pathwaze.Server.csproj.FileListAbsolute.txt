@@ -52,3 +52,6 @@ C:\Users\Josh\Desktop\Pathwaze\Pathwaze\Pathwaze\Server\obj\Debug\net7.0\refint\
 C:\Users\Josh\Desktop\Pathwaze\Pathwaze\Pathwaze\Server\obj\Debug\net7.0\Pathwaze.Server.pdb
 C:\Users\Josh\Desktop\Pathwaze\Pathwaze\Pathwaze\Server\obj\Debug\net7.0\Pathwaze.Server.genruntimeconfig.cache
 C:\Users\Josh\Desktop\Pathwaze\Pathwaze\Pathwaze\Server\obj\Debug\net7.0\ref\Pathwaze.Server.dll
+C:\Users\Josh\Desktop\Pathwaze\Pathwaze\Pathwaze\Server\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Josh\Desktop\Pathwaze\Pathwaze\Pathwaze\Server\bin\Debug\net7.0\Radzen.Blazor.dll
+C:\Users\Josh\Desktop\Pathwaze\Pathwaze\Pathwaze\Server\bin\Debug\net7.0\System.Linq.Dynamic.Core.dll

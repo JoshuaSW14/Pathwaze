@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathwaze.Server", "Pathwaze\Server\Pathwaze.Server.csproj", "{7D3D684B-7A39-4EBE-BCE1-8EC87AEC51C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pathwaze.Server", "Pathwaze\Server\Pathwaze.Server.csproj", "{7D3D684B-7A39-4EBE-BCE1-8EC87AEC51C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathwaze.Client", "Pathwaze\Client\Pathwaze.Client.csproj", "{8B56B91D-85E6-4026-88C1-0E3C3AC6B878}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pathwaze.Client", "Pathwaze\Client\Pathwaze.Client.csproj", "{8B56B91D-85E6-4026-88C1-0E3C3AC6B878}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathwaze.Shared", "Pathwaze\Shared\Pathwaze.Shared.csproj", "{A658312B-02C8-4CCC-B89A-ACEE4B6FE746}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pathwaze.Shared", "Pathwaze\Shared\Pathwaze.Shared.csproj", "{A658312B-02C8-4CCC-B89A-ACEE4B6FE746}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

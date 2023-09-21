@@ -1,39 +1,46 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Pathwaze</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
-
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
+﻿<div>
+    <nav class="d-flex flex-row align-items-center p-2" style="margin-left:5rem; margin-right:5rem; height: 5rem">
+        <div class="col-2 d-flex justify-content-end toolbar-link">
+            <RadzenButton Image="images/radzen-nuget.png" ButtonStyle="ButtonStyle.Light">
+                <span class="rz-button-text">Logo</span>
+                <RadzenImage Path="images/radzen-nuget.png" Style="width: 20px; height: 20px; margin-left: 8px;" />
+            </RadzenButton>
+            <span class="vertical-line" style="margin-left:25px; border-left: 2px solid #E6E8EC"></span>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
+        
+        <div class="d-flex test-border col-8">
+            <div class="toolbar-link px-3">
+                <NavLink href="home" Match="NavLinkMatch.All" style="text-decoration: none;">
+                    <span aria-hidden="true"></span> Home
+                </NavLink>
+            </div>
+            <div class="toolbar-link px-3">
+                <NavLink href="discover" style="text-decoration: none;">
+                    <span aria-hidden="true"></span> Discover
+                </NavLink>
+            </div>
+            <div class="toolbar-link px-3">
+                <NavLink href="recipes" style="text-decoration: none;">
+                    <span aria-hidden="true"></span> Recipes
+                </NavLink>
+            </div>
+            <div class="toolbar-link px-3">
+                <NavLink href="aboutus" style="text-decoration: none;">
+                    <span aria-hidden="true"></span> About Us
+                </NavLink>
+            </div>
+            <div class="toolbar-link px-3">
+                <NavLink href="contact" style="text-decoration: none;">
+                    <span aria-hidden="true"></span> Contact
+                </NavLink>
+            </div>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
+        <div class="col-2 test-border d-flex justify-content-evenly">
+            <RadzenIcon Icon="menu_book" />
+            <RadzenIcon Icon="account_circle" />
         </div>
     </nav>
 </div>
 
 @code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
 }

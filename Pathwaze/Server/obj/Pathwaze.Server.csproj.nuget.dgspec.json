@@ -51,12 +51,16 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.11, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[4.16.0, )"
             }
           },
           "imports": [
@@ -141,7 +145,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly.Server": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.11, )"
             }
           },
           "imports": [
