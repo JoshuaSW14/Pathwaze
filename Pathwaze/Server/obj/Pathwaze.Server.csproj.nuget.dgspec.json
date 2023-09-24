@@ -1,40 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Server\\Pathwaze.Server.csproj": {}
+    "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Server/Pathwaze.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\Pathwaze.Client.csproj": {
+    "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pathwaze.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\Pathwaze.Client.csproj",
+        "projectUniqueName": "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pathwaze.Client.csproj",
         "projectName": "Pathwaze.Client",
-        "projectPath": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\Pathwaze.Client.csproj",
-        "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\",
+        "projectPath": "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pathwaze.Client.csproj",
+        "packagesPath": "/Users/joshuasymons-webb/.nuget/packages/",
+        "outputPath": "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Josh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/joshuasymons-webb/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Shared\\Pathwaze.Shared.csproj": {
-                "projectPath": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Shared\\Pathwaze.Shared.csproj"
+              "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Shared/Pathwaze.Shared.csproj": {
+                "projectPath": "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Shared/Pathwaze.Shared.csproj"
               }
             }
           }
@@ -77,7 +71,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[7.0.5, 7.0.5]"
+              "version": "[7.0.11, 7.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -85,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -94,41 +88,35 @@
         }
       }
     },
-    "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Server\\Pathwaze.Server.csproj": {
+    "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Server/Pathwaze.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Server\\Pathwaze.Server.csproj",
+        "projectUniqueName": "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Server/Pathwaze.Server.csproj",
         "projectName": "Pathwaze.Server",
-        "projectPath": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Server\\Pathwaze.Server.csproj",
-        "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Server\\obj\\",
+        "projectPath": "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Server/Pathwaze.Server.csproj",
+        "packagesPath": "/Users/joshuasymons-webb/.nuget/packages/",
+        "outputPath": "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Server/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Josh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/joshuasymons-webb/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.308/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\Pathwaze.Client.csproj": {
-                "projectPath": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\Pathwaze.Client.csproj"
+              "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pathwaze.Client.csproj": {
+                "projectPath": "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pathwaze.Client.csproj"
               },
-              "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Shared\\Pathwaze.Shared.csproj": {
-                "projectPath": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Shared\\Pathwaze.Shared.csproj"
+              "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Shared/Pathwaze.Shared.csproj": {
+                "projectPath": "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Shared/Pathwaze.Shared.csproj"
               }
             }
           }
@@ -144,6 +132,20 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.11, )"
             }
@@ -167,33 +169,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Shared\\Pathwaze.Shared.csproj": {
+    "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Shared/Pathwaze.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Shared\\Pathwaze.Shared.csproj",
+        "projectUniqueName": "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Shared/Pathwaze.Shared.csproj",
         "projectName": "Pathwaze.Shared",
-        "projectPath": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Shared\\Pathwaze.Shared.csproj",
-        "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Shared\\obj\\",
+        "projectPath": "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Shared/Pathwaze.Shared.csproj",
+        "packagesPath": "/Users/joshuasymons-webb/.nuget/packages/",
+        "outputPath": "/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Shared/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Josh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/joshuasymons-webb/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -227,7 +223,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
         }
       }
     }
