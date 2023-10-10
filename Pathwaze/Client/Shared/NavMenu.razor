@@ -1,41 +1,53 @@
-﻿<div>
-    <nav class="d-flex flex-row align-items-center p-2" style="margin-left:5rem; margin-right:5rem; height: 5rem">
+﻿
+<style>
+    .navbar-item{
+        text-decoration: none;
+        color: #333333;
+    }
+</style>
+
+
+<div>
+    <nav class="d-flex flex-row align-items-center p-2" style="margin-left:5rem; margin-right:5rem; height: 3rem; margin-top: 1rem;">
+        
         <div class="col-2 d-flex justify-content-end toolbar-link">
-            <RadzenButton Image="images/radzen-nuget.png" ButtonStyle="ButtonStyle.Light">
-                <span class="rz-button-text">Logo</span>
-                <RadzenImage Path="images/radzen-nuget.png" Style="width: 20px; height: 20px; margin-left: 8px;" />
-            </RadzenButton>
-            <span class="vertical-line" style="margin-left:25px; border-left: 2px solid #E6E8EC"></span>
+            <RadzenImage Path="images/Pathwaze.svg" Style="width: auto; height: 4rem; margin-left: 8px;" />
+            @*<RadzenButton Image="images/radzen-nuget.png" ButtonStyle="ButtonStyle.Light">
+                
+            </RadzenButton>*@
+            <div class="d-flex align-items-center">
+                <span class="vertical-line" style="margin-left:25px; border-left: 2px solid #E6E8EC; height: 2.5rem"></span>
+            </div>
         </div>
         
-        <div class="d-flex test-border col-8">
-            <div class="toolbar-link px-3">
+        <div class="d-flex col-8">
+            <div class="navbar-item px-4">
                 <NavLink href="home" Match="NavLinkMatch.All" style="text-decoration: none;">
                     <span aria-hidden="true"></span> Home
                 </NavLink>
             </div>
-            <div class="toolbar-link px-3">
+            <div class="navbar-item px-4">
                 <NavLink href="discover" style="text-decoration: none;">
                     <span aria-hidden="true"></span> Discover
                 </NavLink>
             </div>
-            <div class="toolbar-link px-3">
+            <div class="navbar-item px-4">
                 <NavLink href="recipes" style="text-decoration: none;">
                     <span aria-hidden="true"></span> Recipes
                 </NavLink>
             </div>
-            <div class="toolbar-link px-3">
+            <div class="navbar-item px-4">
                 <NavLink href="aboutus" style="text-decoration: none;">
                     <span aria-hidden="true"></span> About Us
                 </NavLink>
             </div>
-            <div class="toolbar-link px-3">
+            <div class="navbar-item px-4">
                 <NavLink href="contact" style="text-decoration: none;">
                     <span aria-hidden="true"></span> Contact
                 </NavLink>
             </div>
         </div>
-        <div class="col-2 test-border d-flex justify-content-evenly">
+        <div class="col-2 d-flex justify-content-evenly">
             <RadzenIcon Icon="menu_book" />
             <RadzenIcon Icon="account_circle" />
         </div>

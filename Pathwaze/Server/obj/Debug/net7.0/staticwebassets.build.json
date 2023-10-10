@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m2sZH9lrEAtZaZRPcIeM4fEaiiQ4O8nbDMomwiNeyJ8=",
+  "Hash": "XDv/HT68fskcxV8Xf58rw7YSZrBDeRQImhA5NitZhhU=",
   "Source": "Pathwaze.Server",
   "BasePath": "_content/Pathwaze.Server",
   "Mode": "Default",
@@ -29,10 +29,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\dark.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\dark.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/dark.css",
       "AssetKind": "All",
@@ -43,13 +43,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\dark.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\dark.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\dark-base.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\dark-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/dark-base.css",
       "AssetKind": "All",
@@ -60,13 +60,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\dark-base.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\dark-base.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\default.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\default.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/default.css",
       "AssetKind": "All",
@@ -77,13 +77,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\default.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\default.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\default-base.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\default-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/default-base.css",
       "AssetKind": "All",
@@ -94,13 +94,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\default-base.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\default-base.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\humanistic.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\humanistic.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/humanistic.css",
       "AssetKind": "All",
@@ -111,13 +111,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\humanistic.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\humanistic.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\humanistic-base.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\humanistic-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/humanistic-base.css",
       "AssetKind": "All",
@@ -128,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\humanistic-base.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\humanistic-base.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\material.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\material.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material.css",
       "AssetKind": "All",
@@ -145,13 +145,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\material.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\material.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\material-base.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\material-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material-base.css",
       "AssetKind": "All",
@@ -162,13 +162,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\material-base.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\material-base.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\software.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\software.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/software.css",
       "AssetKind": "All",
@@ -179,13 +179,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\software.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\software.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\software-base.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\software-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/software-base.css",
       "AssetKind": "All",
@@ -196,13 +196,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\software-base.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\software-base.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\standard.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\standard.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/standard.css",
       "AssetKind": "All",
@@ -213,13 +213,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\standard.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\standard.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\standard-base.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\standard-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/standard-base.css",
       "AssetKind": "All",
@@ -230,13 +230,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\css\\standard-base.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\css\\standard-base.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\MaterialIcons-Regular.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\MaterialIcons-Regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/MaterialIcons-Regular.woff",
       "AssetKind": "All",
@@ -247,13 +247,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\MaterialIcons-Regular.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\MaterialIcons-Regular.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v15-latin-300.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v15-latin-300.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-300.woff",
       "AssetKind": "All",
@@ -264,13 +264,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v15-latin-300.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v15-latin-300.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v15-latin-700.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v15-latin-700.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-700.woff",
       "AssetKind": "All",
@@ -281,13 +281,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v15-latin-700.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v15-latin-700.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-regular.woff",
       "AssetKind": "All",
@@ -298,13 +298,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v30-latin-300.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v30-latin-300.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-300.woff",
       "AssetKind": "All",
@@ -315,13 +315,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v30-latin-300.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v30-latin-300.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v30-latin-500.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v30-latin-500.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-500.woff",
       "AssetKind": "All",
@@ -332,13 +332,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v30-latin-500.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v30-latin-500.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v30-latin-700.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v30-latin-700.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-700.woff",
       "AssetKind": "All",
@@ -349,13 +349,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v30-latin-700.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v30-latin-700.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v30-latin-regular.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v30-latin-regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-regular.woff",
       "AssetKind": "All",
@@ -366,13 +366,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\roboto-v30-latin-regular.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\roboto-v30-latin-regular.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-Black.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-Black.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Black.woff",
       "AssetKind": "All",
@@ -383,13 +383,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-Black.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-Black.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-BlackIt.woff",
       "AssetKind": "All",
@@ -400,13 +400,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-Bold.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-Bold.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Bold.woff",
       "AssetKind": "All",
@@ -417,13 +417,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-Bold.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-Bold.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-BoldIt.woff",
       "AssetKind": "All",
@@ -434,13 +434,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-ExtraLight.woff",
       "AssetKind": "All",
@@ -451,13 +451,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-ExtraLightIt.woff",
       "AssetKind": "All",
@@ -468,13 +468,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-It.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-It.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-It.woff",
       "AssetKind": "All",
@@ -485,13 +485,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-It.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-It.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-Light.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-Light.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Light.woff",
       "AssetKind": "All",
@@ -502,13 +502,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-Light.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-Light.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-LightIt.woff",
       "AssetKind": "All",
@@ -519,13 +519,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-Regular.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-Regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Regular.woff",
       "AssetKind": "All",
@@ -536,13 +536,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-Regular.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-Regular.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Semibold.woff",
       "AssetKind": "All",
@@ -553,13 +553,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-SemiboldIt.woff",
       "AssetKind": "All",
@@ -570,13 +570,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\Radzen.Blazor.js",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\Radzen.Blazor.js",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "Radzen.Blazor.js",
       "AssetKind": "All",
@@ -587,7 +587,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\staticwebassets\\Radzen.Blazor.js"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\staticwebassets\\Radzen.Blazor.js"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.boot.json",
@@ -828,6 +828,57 @@
       "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.11\\lib\\net7.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Cryptography.Internal.dll",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Cryptography.Internal.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.11\\lib\\net7.0\\Microsoft.AspNetCore.Cryptography.Internal.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.11\\lib\\net7.0\\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.11\\lib\\net7.0\\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll"
+    },
+    {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
       "SourceId": "Pathwaze.Client",
       "SourceType": "Project",
@@ -860,6 +911,91 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\runtimes\\browser-wasm\\lib\\net7.0\\Microsoft.CSharp.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\lib\\net6.0\\Microsoft.EntityFrameworkCore.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.11\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Caching.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Caching.Memory.dll"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll",
@@ -1030,6 +1166,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.FileSystemGlobbing.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Core.dll",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Identity.Core.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.extensions.identity.core\\7.0.11\\lib\\net7.0\\Microsoft.Extensions.Identity.Core.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Stores.dll",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Identity.Stores.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.extensions.identity.stores\\7.0.11\\lib\\net7.0\\Microsoft.Extensions.Identity.Stores.dll"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
@@ -1318,7 +1488,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.0\\lib\\net7.0\\Radzen.Blazor.dll"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.16.3\\lib\\net7.0\\Radzen.Blazor.dll"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.AppContext.dll",
@@ -4194,6 +4364,23 @@
       "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Diagnostics.Debug.dll"
     },
     {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\+fjTBG4K.gz",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Identity.Stores.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Stores.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Stores.dll"
+    },
+    {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\+IoiFnf3.gz",
       "SourceId": "Pathwaze.Client",
       "SourceType": "Project",
@@ -4447,6 +4634,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Collections.NonGeneric.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\3p93a35F.gz",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\3Rj2MPfF.gz",
@@ -4942,6 +5146,40 @@
       "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Collections.dll"
     },
     {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\Bfzko4Sm.gz",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\bGU9WIHB.gz",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll"
+    },
+    {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\C+38xVto.gz",
       "SourceId": "Pathwaze.Client",
       "SourceType": "Project",
@@ -5110,6 +5348,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.Quic.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\E8JJDYgS.gz",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Radzen.Blazor.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Radzen.Blazor.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Radzen.Blazor.dll"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\eAepA9RG.gz",
@@ -5450,6 +5705,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Cryptography.X509Certificates.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\htemeY8Z.gz",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\hWm12GRZ.gz",
@@ -5994,23 +6266,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Reflection.dll"
-    },
-    {
-      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\n7KS1YGc.gz",
-      "SourceId": "Pathwaze.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Radzen.Blazor.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Radzen.Blazor.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Radzen.Blazor.dll"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\ngKqnqxM.gz",
@@ -6846,6 +7101,23 @@
       "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IO.Compression.Brotli.dll"
     },
     {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\TfuD84Mn.gz",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll"
+    },
+    {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\tMcyndZD.gz",
       "SourceId": "Pathwaze.Client",
       "SourceType": "Project",
@@ -6946,6 +7218,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Reflection.Extensions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\u+lvn5Fu.gz",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Cryptography.Internal.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Cryptography.Internal.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Cryptography.Internal.dll"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\u5ndS8HC.gz",
@@ -7082,6 +7371,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Serialization.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\vCC1YcUj.gz",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Identity.Core.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Core.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Core.dll"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\vIpafL3a.gz",
@@ -7252,6 +7558,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\netstandard.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\Wl3wh6T3.gz",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\wOT+pbl9.gz",
@@ -7524,6 +7847,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.Requests.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\ZBT+GKfC.gz",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\obj\\Debug\\net7.0\\build-gz\\zq3SJmqR.gz",
@@ -7830,6 +8170,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icon-192.png"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\images\\Pathwaze.png",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/Pathwaze.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Pathwaze.png"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\images\\Pathwaze.svg",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/Pathwaze.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Pathwaze.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\images\\placeholder.png",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/placeholder.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\placeholder.png"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\index.html",

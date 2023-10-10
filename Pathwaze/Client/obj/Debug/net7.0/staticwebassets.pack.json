@@ -69,6 +69,18 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\images\\Pathwaze.png",
+      "PackagePath": "staticwebassets\\images\\Pathwaze.png"
+    },
+    {
+      "Id": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\images\\Pathwaze.svg",
+      "PackagePath": "staticwebassets\\images\\Pathwaze.svg"
+    },
+    {
+      "Id": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\images\\placeholder.png",
+      "PackagePath": "staticwebassets\\images\\placeholder.png"
+    },
+    {
       "Id": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
