@@ -329,7 +329,7 @@
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Alternative</AssetRole>
-      <RelatedAsset>C:\Users\Josh\Desktop\Pathwaze\Pathwaze\Pathwaze\Client\bin\Debug\net7.0\wwwroot\_framework\blazor.webassembly.js</RelatedAsset>
+      <RelatedAsset>/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js</RelatedAsset>
       <AssetTraitName>Content-Encoding</AssetTraitName>
       <AssetTraitValue>gzip</AssetTraitValue>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

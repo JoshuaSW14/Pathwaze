@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Pathwaze.Client
 build_property.RootNamespace = Pathwaze.Client
-build_property.ProjectDir = C:\Users\Josh\Desktop\Pathwaze\Pathwaze\Pathwaze\Client\
+build_property.ProjectDir = /Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Josh\Desktop\Pathwaze\Pathwaze\Pathwaze\Client
+build_property.MSBuildProjectDirectory = /Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/App.razor]
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/Pages/AboutUs.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRVcy5yYXpvcg==
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pages/AboutUs.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXRVcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/Pages/Contact.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5yYXpvcg==
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pages/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/Pages/Discover.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzY292ZXIucmF6b3I=
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pages/Discover.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlzY292ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/Pages/Item.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSXRlbS5yYXpvcg==
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pages/Item.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSXRlbS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/Pages/Login.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/Pages/Recipes.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjaXBlcy5yYXpvcg==
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pages/Recipes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjaXBlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/Pages/Register.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/_Imports.razor]
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-jsc4808i2d
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-16cttla5ws
 
-[C:/Users/Josh/Desktop/Pathwaze/Pathwaze/Pathwaze/Client/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-cq6tk9h0x1
+[/Users/joshuasymons-webb/Documents/Projects/Pathwaze/Pathwaze/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-rrx004h35s

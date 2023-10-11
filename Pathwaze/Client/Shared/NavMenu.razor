@@ -1,6 +1,6 @@
-﻿
+﻿@inject NavigationManager _nav
 <style>
-    .navbar-item{
+    .navbar-item {
         text-decoration: none;
         color: #333333;
     }
@@ -9,17 +9,17 @@
 
 <div>
     <nav class="d-flex flex-row align-items-center p-2" style="margin-left:5rem; margin-right:5rem; height: 3rem; margin-top: 1rem;">
-        
+
         <div class="col-2 d-flex justify-content-end toolbar-link">
             <RadzenImage Path="images/Pathwaze.svg" Style="width: auto; height: 4rem; margin-left: 8px;" />
             @*<RadzenButton Image="images/radzen-nuget.png" ButtonStyle="ButtonStyle.Light">
-                
-            </RadzenButton>*@
+
+                </RadzenButton>*@
             <div class="d-flex align-items-center">
                 <span class="vertical-line" style="margin-left:25px; border-left: 2px solid #E6E8EC; height: 2.5rem"></span>
             </div>
         </div>
-        
+
         <div class="d-flex col-8">
             <div class="navbar-item px-4">
                 <NavLink href="home" Match="NavLinkMatch.All" style="text-decoration: none;">
@@ -48,11 +48,18 @@
             </div>
         </div>
         <div class="col-2 d-flex justify-content-evenly">
-            <RadzenIcon Icon="menu_book" />
-            <RadzenIcon Icon="account_circle" />
+            <RadzenIcon Icon="login" @onclick="@(()=>_nav.NavigateTo("/login"))" />
+            <RadzenIcon Icon="face" @onclick="@(()=>_nav.NavigateTo("/register"))" />
+            @*<RadzenIcon Icon="menu_book" />
+                <RadzenIcon Icon="account_circle" />*@
         </div>
     </nav>
 </div>
 
 @code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+    }
 }

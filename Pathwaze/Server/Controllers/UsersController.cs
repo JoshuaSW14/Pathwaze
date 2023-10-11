@@ -28,9 +28,9 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet("login")]
-    public async Task<IActionResult> Login(string email, string password)
+    public async Task<IActionResult> Login(string username, string password)
     {
-        var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+        var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == username);
         if (user == null)
         {
             return BadRequest("Invalid email or password.");
@@ -46,7 +46,6 @@ public class UsersController : ControllerBase
         {
             new Claim(JwtRegisteredClaimNames.Sub, user.Email),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-            // Add other claims as necessary
         };
 
         var token = new JwtSecurityToken
