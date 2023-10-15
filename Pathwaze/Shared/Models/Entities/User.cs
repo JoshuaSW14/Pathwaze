@@ -3,12 +3,8 @@ namespace Pathwaze.Shared.Models.Entities;
 
 public class User : IdentityUser
 {
-    public Guid Id { get; set; }
     public string? FirstName { get; set; }
     public string? LastName { get; set; }
-    public string? Email { get; set; }
-    public string? PhoneNumber { get; set; }
-    public string? PasswordHash { get; set; }
     public string? AccountType { get; set; }
     public DateTime LastLoginDate { get; set; }
     public DateTime CreationDate { get; set; }

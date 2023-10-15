@@ -1,4 +1,9 @@
 ﻿@page "/login"
+@using Pathwaze.Client.Interfaces;
+@using Pathwaze.Shared.Models.Dtos;
+
+@inject NavigationManager Navigation;
+@inject IUserService UserService;
 
 <PageTitle>Login</PageTitle>
 
@@ -14,37 +19,93 @@
         <RadzenColumn Size="12" SizeMD="6">
             <RadzenCard Class="rz-shadow-0 rz-border-radius-0 rz-p-12">
                 <RadzenText TextStyle="TextStyle.H5" TagName="TagName.H2" Class="rz-mb-6">
-                    Login
+                    @(register ? "Register" : "Login")
                 </RadzenText>
-                <RadzenTemplateForm Data=@("SimpleLogin") Action="https://localhost:7003/Users/login">
-                    <RadzenLogin AllowRegister="true" AllowResetPassword="true" Username=@userName Password=@password
-                                 AllowRememberMe="true" RememberMe="@rememberMe"
+                <RadzenTemplateForm Data=@("SimpleLogin") Style="display: flex; flex-direction: column; gap: 1.5rem;">  @*Action="https://localhost:7003/Users/login"*@
+                    @if (register)
+                    {
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div class="rz-form-row" style="display: flex; gap: 0.5rem; flex-flow: row wrap; align-items: center">
+                                <RadzenLabel Text="First Name" Component="FirstName" />
+                                <div class="rz-form-input-wrapper" style="flex-grow: 3; flex-shrink: 1; flex-basis: 14rem;">
+                                    <RadzenTextBox Style="width: 100%;" Name="FirstName" @bind-Value=@newUser.FirstName />
+                                </div>
+                            </div>
+
+                            <div class="rz-form-row" style="display: flex; gap: 0.5rem; flex-flow: row wrap; align-items: center">
+                                <RadzenLabel Text="Last Name" Component="LastName" />
+                                <div class="rz-form-input-wrapper" style="flex-grow: 3; flex-shrink: 1; flex-basis: 14rem;">
+                                    <RadzenTextBox Style="width: 100%;" Name="LastName" @bind-Value=@newUser.LastName />
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    
+                    <RadzenLogin AllowRegister="!register" AllowResetPassword="!register" Username=@user.Username Password=@user.Password
+                                 AllowRememberMe="true" RememberMe="@rememberMe" UserText="Email" LoginText="@(register ? "Register" : "Login")"
                                  Login=@(args => OnLogin(args, "Login with default values"))
                                  ResetPassword=@(args => OnResetPassword(args, "Login with default values"))
-                                 Register=@(args => OnRegister("Login with default values")) />
+                                 Register=@(args => OnToggleRegister("Login with default values")) />
                 </RadzenTemplateForm>
+
+                
             </RadzenCard>
         </RadzenColumn>
     </RadzenRow>
 </div>
 
 @code {
-    string userName = "admin";
-    string password = "admin";
     bool rememberMe = true;
+    private bool register = false;
+    private LoginDto user = new LoginDto();
+    private UserDto newUser = new UserDto();
 
-    void OnLogin(LoginArgs args, string name)
+    private async void OnLogin(LoginArgs args, string name)
     {
-        Console.WriteLine($"{name} -> Username: {args.Username}, password: {args.Password}, remember me: {args.RememberMe}");
+        if (register)
+        {
+            OnRegister(args.Username, args.Password);
+            return;
+        }
+
+        user.Username = args.Username;
+        user.Password = args.Password;
+
+        Console.WriteLine("Logging in..");
+        var response = await UserService.Login(user);
+        if (response)
+        {
+            Console.WriteLine("Success!");
+            Navigation.NavigateTo("home");
+        }
+        else
+            Console.WriteLine("Failed :(");
     }
 
-    void OnRegister(string name)
+    private async void OnRegister(string username, string password)
     {
-        Console.WriteLine($"{name} -> Register");
+        newUser.Email = username;
+        newUser.Password = password;
+        Console.WriteLine("Creating a new user..");
+        var response = await UserService.Register(newUser);
+        if (response)
+        {
+            Console.WriteLine("Success!");
+            Navigation.NavigateTo("home");
+        }
+        else
+            Console.WriteLine("Failed :(");
     }
+
+    void OnToggleRegister(string name) => register = !register;
 
     void OnResetPassword(string value, string name)
     {
         Console.WriteLine($"{name} -> ResetPassword for user: {value}");
+    }
+
+    void OnInvalidSubmit(FormInvalidSubmitEventArgs args)
+    {
+        Console.WriteLine($"Invalid");
     }
 }

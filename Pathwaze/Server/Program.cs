@@ -3,11 +3,18 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Pathwaze.Server.Data;
-using Pathwaze.Server.Helpers;
 using Pathwaze.Shared.Models.Entities;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(policy =>
+{
+    policy.AddPolicy("CorsPolicy", opt => opt
+    .AllowAnyOrigin()
+    .AllowAnyHeader()
+    .AllowAnyMethod());
+});
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
@@ -20,7 +27,7 @@ builder.Services.AddIdentity<User, IdentityRole>()
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 builder.Services.Configure<JwtSettings>(jwtSettings);
 
-var key = Encoding.ASCII.GetBytes(jwtSettings.Get<JwtSettings>().Key);
+var key = Encoding.ASCII.GetBytes(jwtSettings.Get<JwtSettings>()!.Key);
 
 builder.Services.AddAuthentication(x =>
 {
@@ -35,14 +42,12 @@ builder.Services.AddAuthentication(x =>
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = jwtSettings.Get<JwtSettings>().Issuer,
-        ValidAudience = jwtSettings.Get<JwtSettings>().Audience,
+        ValidIssuer = jwtSettings.Get<JwtSettings>()!.Issuer,
+        ValidAudience = jwtSettings.Get<JwtSettings>()!.Audience,
         IssuerSigningKey = new SymmetricSecurityKey(key)
     };
 });
 builder.Services.AddAuthorization();
-
-builder.Services.AddScoped<JwtUtils>();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
@@ -72,6 +77,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseCors("CorsPolicy");
 
 app.MapRazorPages();
 app.MapControllers();
