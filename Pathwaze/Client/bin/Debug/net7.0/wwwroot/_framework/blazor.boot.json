@@ -214,15 +214,15 @@
       "mscorlib.dll": "sha256-8OmdVHzoN7xteY5ehp0L8R17I9QxFkH2lUVHFuslE0s=",
       "netstandard.dll": "sha256-urq+e2ZQXxmOWMRxTR92529HnUVu6+kyVnfF6SoLad8=",
       "System.Private.CoreLib.dll": "sha256-ixnF\/wVKLHZM1N0lfJufpZ41EC2LvvyiSqdW43h3Xew=",
-      "Pathwaze.Shared.dll": "sha256-Y2TC4sbq8+P0tVmzsQCYk70B4xOUX9X5oBDLfXdqmpA=",
-      "Pathwaze.Client.dll": "sha256-01xcwRICRCSg\/iPYTHtbx\/eMgqsggIKsmbjQxOcgK8g="
+      "Pathwaze.Shared.dll": "sha256-uaK\/MDMnGB6uqy\/YeUolU31eA\/QYdSOpvpdlEwq3Z78=",
+      "Pathwaze.Client.dll": "sha256-6g3KzGPMp1fOTAtSgz79SGsEptnpC1EEF+ORnt07qBk="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Pathwaze.Shared.pdb": "sha256-EnaKwk8DVv62JJcXmQSKpW2rqyUPyUTFUlwDkymgx1U=",
-      "Pathwaze.Client.pdb": "sha256-cN1Xpuz5M3EP6C+VXrMubjQhbTC\/YyLBgnDFTjB8vh8="
+      "Pathwaze.Shared.pdb": "sha256-1O2ucZk3eEo8KPUZZup8pX6JKkGqi0YJcDs+a8taMRE=",
+      "Pathwaze.Client.pdb": "sha256-k3ei+gZ6qt6RCJsxnwvsUxy3qMjWkyGYdiIKTVjRQYY="
     },
     "runtime": {
       "dotnet.7.0.12.n1r5cmqozj.js": "sha256-cPJgWy8SjMaYFeimGkYy23ls+rDZVmoC\/eMoHpqRc+4=",

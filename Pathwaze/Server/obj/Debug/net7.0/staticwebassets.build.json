@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zWn1rz/EqZZ+apS/zsdXgPkooO75le12HVp2xJrW1Ns=",
+  "Hash": "NCILxeDs6TusE4XRJAIKVtkHeJhr9s/knRM1tJYIabE=",
   "Source": "Pathwaze.Server",
   "BasePath": "_content/Pathwaze.Server",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "Pathwaze.Client",
       "GetPublishAssetsTargets": "ComputeFilesToPublish;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true;Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true",
       "AdditionalPublishPropertiesToRemove": "NoBuild;RuntimeIdentifier;WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
@@ -46,23 +46,6 @@
       "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\7.0.12\\staticwebassets\\AuthenticationService.js"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\dark.css",
-      "SourceId": "Radzen.Blazor",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\",
-      "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/dark.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\dark.css"
-    },
-    {
       "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\dark-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
@@ -80,12 +63,12 @@
       "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\dark-base.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\default.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\dark.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/default.css",
+      "RelativePath": "css/dark.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -94,7 +77,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\default.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\dark.css"
     },
     {
       "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\default-base.css",
@@ -114,12 +97,12 @@
       "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\default-base.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\humanistic.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\default.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/humanistic.css",
+      "RelativePath": "css/default.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,7 +111,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\humanistic.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\default.css"
     },
     {
       "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\humanistic-base.css",
@@ -148,12 +131,12 @@
       "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\humanistic-base.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\material.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\humanistic.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/material.css",
+      "RelativePath": "css/humanistic.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -162,7 +145,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\material.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\humanistic.css"
     },
     {
       "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\material-base.css",
@@ -182,12 +165,12 @@
       "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\material-base.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\software.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\material.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/software.css",
+      "RelativePath": "css/material.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -196,7 +179,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\software.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\material.css"
     },
     {
       "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\software-base.css",
@@ -216,12 +199,12 @@
       "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\software-base.css"
     },
     {
-      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\standard.css",
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\software.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/standard.css",
+      "RelativePath": "css/software.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -230,7 +213,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\standard.css"
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\software.css"
     },
     {
       "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\standard-base.css",
@@ -248,6 +231,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\standard-base.css"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\standard.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/standard.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\css\\standard.css"
     },
     {
       "Identity": "C:\\Users\\Josh\\.nuget\\packages\\radzen.blazor\\4.17.1\\staticwebassets\\fonts\\MaterialIcons-Regular.woff",
@@ -692,23 +692,6 @@
       "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.12\\runtimes\\browser-wasm\\native\\dotnet.wasm"
     },
     {
-      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "Pathwaze.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.12\\runtimes\\browser-wasm\\native\\icudt.dat"
-    },
-    {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "Pathwaze.Client",
       "SourceType": "Project",
@@ -758,6 +741,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.12\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+    },
+    {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Josh\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.12\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
@@ -8138,6 +8138,23 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "Pathwaze.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Pathwaze.Client",
       "SourceType": "Project",
@@ -8238,23 +8255,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "Pathwaze.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\Josh\\Desktop\\Pathwaze\\Pathwaze\\Pathwaze\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
