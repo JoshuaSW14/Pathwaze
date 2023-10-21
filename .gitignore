@@ -483,3 +483,10 @@ Pathwaze/Client/obj/
 Pathwaze/Server/obj/
 Pathwaze/Shared/bin/
 Pathwaze/Shared/obj/
+
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
