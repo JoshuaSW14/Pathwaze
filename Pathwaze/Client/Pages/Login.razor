@@ -75,7 +75,7 @@
         var response = await UserService.Login(user);
         if (response)
         {
-            Console.WriteLine("Success!");
+            Console.WriteLine("Success!" + response);
             Navigation.NavigateTo("home");
         }
         else

@@ -1,7 +1,10 @@
 ﻿using Newtonsoft.Json;
+using Pathwaze.Client.AuthProviders;
 using Pathwaze.Client.Interfaces;
 using Pathwaze.Shared.Models.Dtos;
 using System.Text;
+using System.Text.Json;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Pathwaze.Client.Services;
 
@@ -9,11 +12,13 @@ public class UserService : IUserService
 {
     private readonly HttpClient _httpClient;
     private readonly ILogger<UserService> _logger;
+    private readonly CustomAuthStateProvider _customAuthStateProvider;
 
-    public UserService(HttpClient httpClient, ILogger<UserService> logger)
+    public UserService(HttpClient httpClient, ILogger<UserService> logger, CustomAuthStateProvider customAuthStateProvider)
     {
         _httpClient = httpClient;
         _logger = logger;
+        _customAuthStateProvider = customAuthStateProvider;
     }
 
     public async Task<bool> Login(LoginDto user)
@@ -26,9 +31,15 @@ public class UserService : IUserService
 
             var response = await _httpClient.SendAsync(httpRequest);
             if (response.IsSuccessStatusCode)
-                return true;
+            {
+                var stringContent = await response.Content.ReadAsStringAsync();
+                var result = JsonSerializer.Deserialize<LoginResultDto>(stringContent, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
+                await _customAuthStateProvider.SetTokenAsync(result?.Token!);
 
-        }catch (Exception ex)
+                return true;
+            }
+        }
+        catch (Exception ex)
         {
             _logger.LogError(ex, "UserService.Login failed with: " + ex.Message);
         }

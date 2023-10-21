@@ -43,6 +43,18 @@
 
 
 <div class="header-section d-flex align-items-center">
+    <div>
+        <span>
+            <AuthorizeView>
+                <Authorized>
+                    The user is authorized
+                </Authorized>
+                <NotAuthorized>
+                    The User is not authorized
+                </NotAuthorized>
+            </AuthorizeView>
+        </span>
+    </div>
     <div class="col-6 d-flex flex-column">
         <h1>Pathwaze</h1>
         <span style="margin-top:2rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, est felis, sagittis viverra nulla mattis scelerisque. Eget cras integer.</span>
@@ -69,5 +81,16 @@
 </div>
 
 @code {
+    [CascadingParameter]
+    public Task<AuthenticationState>? AuthState { get; set; }
 
+    protected override async Task OnInitializedAsync()
+    {
+        //var authState = await AuthState;
+        //var user = authState.User;
+        //if (user.Identity!.IsAuthenticated)
+        //    Console.WriteLine($"Authenticated --------- {user.Identity.Name}");
+        //else
+        //    Console.WriteLine("Not Authenticated ---------");
+    }
 }

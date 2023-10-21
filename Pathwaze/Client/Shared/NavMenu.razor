@@ -1,5 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Components.Authorization
 @using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using System.Security.Claims
+@inject AuthenticationStateProvider AuthenticationStateProvider
 
 @inject NavigationManager _nav
 
@@ -60,9 +62,26 @@
 </div>
 
 @code {
+    private string? authMessage;
+    private string? surname;
+    private IEnumerable<Claim> claims = Enumerable.Empty<Claim>();
 
     protected override async Task OnInitializedAsync()
     {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity is not null && user.Identity.IsAuthenticated)
+        {
+            authMessage = $"{user.Identity.Name} is authenticated.";
+            claims = user.Claims;
+            surname = user.FindFirst(c => c.Type == ClaimTypes.Surname)?.Value;
+        }
+        else
+        {
+            authMessage = "The user is NOT authenticated.";
+        }
+
         await base.OnInitializedAsync();
     }
 }
