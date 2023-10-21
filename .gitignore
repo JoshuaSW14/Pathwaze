@@ -475,3 +475,11 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Custom
+Pathwaze/Client/bin/
+Pathwaze/Server/bin/
+Pathwaze/Client/obj/
+Pathwaze/Server/obj/
+Pathwaze/Shared/bin/
+Pathwaze/Shared/obj/
