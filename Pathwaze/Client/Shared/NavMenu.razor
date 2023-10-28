@@ -54,9 +54,17 @@
             </div>
         </div>
         <div class="col-2 d-flex justify-content-evenly">
-            <RadzenIcon Icon="login" @onclick="@(()=>_nav.NavigateTo("/login"))" />
-            @*<RadzenIcon Icon="menu_book" />
-                <RadzenIcon Icon="account_circle" />*@
+            <AuthorizeView>
+                <Authorized>
+                    <RadzenIcon Icon="menu_book" />
+                    <RadzenIcon Icon="account_circle" />
+                </Authorized>
+                <NotAuthorized>
+                    <RadzenIcon Icon="login" @onclick="@(()=>_nav.NavigateTo("/login"))" />
+                </NotAuthorized>
+            </AuthorizeView>
+            
+            
         </div>
     </nav>
 </div>
