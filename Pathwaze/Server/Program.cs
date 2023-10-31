@@ -1,10 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using Pathwaze.Server.Data;
-using Pathwaze.Shared.Models.Entities;
-using System.Text;
+using Pathwaze.Server.Interfaces;
+using Pathwaze.Server.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +20,9 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(conn
 builder.Services.AddIdentity<User, IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
+
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+builder.Services.AddScoped<SeedData>();
 
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 builder.Services.Configure<JwtSettings>(jwtSettings);
@@ -55,6 +55,18 @@ builder.Services.AddRazorPages();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+using(var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<AppDbContext>();
+    context.Database.Migrate();
+
+    var testUserPw = builder.Configuration.GetValue<string>("SeedUserPW");
+
+    var seedData = services.GetRequiredService<SeedData>();
+    await seedData.Initialize(services, testUserPw);
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

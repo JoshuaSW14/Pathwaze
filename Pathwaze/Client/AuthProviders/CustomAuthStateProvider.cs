@@ -8,25 +8,12 @@ namespace Pathwaze.Client.AuthProviders;
 
 public class CustomAuthStateProvider : AuthenticationStateProvider
 {
-    //private AuthenticationState authenticationState;
     private readonly IJSRuntime _jsRuntime;
 
-    public CustomAuthStateProvider(IJSRuntime jsRuntime) //AuthenticationService service, 
+    public CustomAuthStateProvider(IJSRuntime jsRuntime)
     {
         _jsRuntime = jsRuntime;
-        //authenticationState = new AuthenticationState(service.CurrentUser);
-
-        //service.UserChanged += (newUser) =>
-        //{
-        //    authenticationState = new AuthenticationState(newUser);
-
-        //    NotifyAuthenticationStateChanged(
-        //        Task.FromResult(new AuthenticationState(newUser)));
-        //};
     }
-
-    //public override Task<AuthenticationState> GetAuthenticationStateAsync() =>
-    //    Task.FromResult(authenticationState);
 
     public async Task<string> GetTokenAsync()
             => await _jsRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");

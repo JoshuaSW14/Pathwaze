@@ -1,8 +1,9 @@
 ﻿@using Microsoft.AspNetCore.Components.Authorization
-@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
 @using System.Security.Claims
-@inject AuthenticationStateProvider AuthenticationStateProvider
+@using Pathwaze.Client.AuthProviders;
 
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject CustomAuthStateProvider authStateProvider
 @inject NavigationManager _nav
 
 <style>
@@ -11,7 +12,6 @@
         color: #333333;
     }
 </style>
-
 
 <div>
     <nav class="d-flex flex-row align-items-center p-2" style="margin-left:5rem; margin-right:5rem; height: 3rem; margin-top: 1rem;">
@@ -57,14 +57,12 @@
             <AuthorizeView>
                 <Authorized>
                     <RadzenIcon Icon="menu_book" />
-                    <RadzenIcon Icon="account_circle" />
+                    <RadzenIcon Icon="account_circle" @onclick="@(logout)" />
                 </Authorized>
                 <NotAuthorized>
                     <RadzenIcon Icon="login" @onclick="@(()=>_nav.NavigateTo("/login"))" />
                 </NotAuthorized>
             </AuthorizeView>
-            
-            
         </div>
     </nav>
 </div>
@@ -91,5 +89,10 @@
         }
 
         await base.OnInitializedAsync();
+    }
+
+    private async void logout()
+    {
+        await authStateProvider.SetTokenAsync(null!);
     }
 }

@@ -2,12 +2,19 @@
 
 <div class="page">
     <main>
-        <div>
-            <NavMenu />
-        </div>
+        <AuthorizeView Roles="Manager">
+            <Authorized>
+                <p>Manager</p>
+            </Authorized>
+            <NotAuthorized>
+                <div>
+                    <NavMenu />
+                </div>
 
-        <article class="content main-body">
-            @Body
-        </article>
+                <article class="content main-body">
+                    @Body
+                </article>
+            </NotAuthorized>
+        </AuthorizeView>
     </main>
 </div>

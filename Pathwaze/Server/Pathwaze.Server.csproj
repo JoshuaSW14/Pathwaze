@@ -1,9 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>c4177d49-5ffe-482f-85a0-33024d5d4b0f</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
@@ -34,10 +35,14 @@
 
   <ItemGroup>
     <None Remove="Data\" />
+    <None Remove="Repositories\" />
+    <None Remove="Interfaces\" />
   </ItemGroup>
 
 
   <ItemGroup>
     <Folder Include="Helpers\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,86 @@
+﻿using Microsoft.AspNetCore.Identity;
+using Pathwaze.Server.Interfaces;
+
+namespace Pathwaze.Server.Data;
+
+public class SeedData
+{
+    private IUsersRepository _usersRepository;
+
+    public SeedData(IUsersRepository usersRepository)
+    {
+        _usersRepository = usersRepository;
+    }
+
+    public async Task Initialize(IServiceProvider serviceProvider, string testUserPw)
+    {
+        using (var context = new AppDbContext(serviceProvider.GetRequiredService<DbContextOptions<AppDbContext>>()))
+        {
+            _usersRepository = serviceProvider.GetService<IUsersRepository>()!;
+
+            var adminID = await EnsureUser(serviceProvider, testUserPw, "admin@pathwaze.com");
+            await EnsureRole(serviceProvider, adminID, "Administrator");
+
+            var managerID = await EnsureUser(serviceProvider, testUserPw, "manager@pathwaze.com");
+            await EnsureRole(serviceProvider, managerID, "Manager");
+
+            var userID = await EnsureUser(serviceProvider, testUserPw, "user@pathwaze.com");
+            await EnsureRole(serviceProvider, userID, "User");
+
+            SeedDB(context, adminID);
+        }
+    }
+    
+    private async Task<string> EnsureUser(IServiceProvider serviceProvider, string testUserPw, string UserName)
+    {
+        var userManager = serviceProvider.GetService<UserManager<User>>();
+
+        var user = await userManager.FindByNameAsync(UserName);
+        if (user == null)
+        {
+            user = await _usersRepository.Register(new UserDto()
+            {
+                Email = UserName,
+                Password = testUserPw
+            });
+        }
+
+        if (user == null)
+        {
+            throw new Exception("The password is probably not strong enough!");
+        }
+        return user.Id;
+    }
+
+    private static async Task<IdentityResult> EnsureRole(IServiceProvider serviceProvider, string uid, string role)
+    {
+        var roleManager = serviceProvider.GetService<RoleManager<IdentityRole>>();
+
+        if (roleManager == null)
+        {
+            throw new Exception("roleManager null");
+        }
+
+        IdentityResult IR;
+        if (!await roleManager.RoleExistsAsync(role))
+        {
+            IR = await roleManager.CreateAsync(new IdentityRole(role));
+        }
+
+        var userManager = serviceProvider.GetService<UserManager<User>>();
+        var user = await userManager!.FindByIdAsync(uid);
+        if (user == null)
+        {
+            throw new Exception("The testUserPw password was probably not strong enough!");
+        }
+
+        IR = await userManager.AddToRoleAsync(user, role);
+
+        return IR;
+    }
+
+    public static void SeedDB(AppDbContext context, string adminId)
+    {
+    }
+}
+

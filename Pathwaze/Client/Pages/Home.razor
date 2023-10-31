@@ -2,7 +2,6 @@
 @page "/home"
 
 @using Microsoft.AspNetCore.Components.Authorization
-@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
 @using Pathwaze.Client.AuthProviders;
 
 @inject CustomAuthStateProvider authStateProvider
@@ -10,9 +9,6 @@
 <style>
     .header-section{
         background-color: #F4F5F6;
-        height: 35rem;
-        padding-left: 10rem !important;
-        padding-right: 10rem !important;
         padding-top: 5rem;
     }
     .header-section h1{
@@ -22,25 +18,13 @@
 
     .slideshow-section{
         background-color: #FCFCFD;
-        height: 35rem;
-        padding-left: 10rem !important;
-        padding-right: 10rem !important;
-    }
-
-    .suggestion-section{
-        height: 35rem;
-        padding-left: 10rem !important;
-        padding-right: 10rem !important;
     }
 
     .feature-section{
         background-color: #FCFCFD;
-        height: 35rem;
-        padding-left: 10rem !important;
-        padding-right: 10rem !important;
     }
 
-    .reason-section{
+    .general-section-style {
         height: 35rem;
         padding-left: 10rem !important;
         padding-right: 10rem !important;
@@ -48,7 +32,7 @@
 </style>
 
 
-<div class="header-section d-flex align-items-center">
+<div class="header-section d-flex align-items-center general-section-style">
     <div>
         <span>
             <AuthorizeView>
@@ -73,16 +57,16 @@
         <RadzenImage Path="images/placeholder.png" Style="width: 15rem;" />
     </div>
 </div>
-<div class="slideshow-section">
+<div class="slideshow-section general-section-style">
 
 </div>
-<div class="suggestion-section">
+<div class="suggestion-section general-section-style">
 
 </div>
-<div class="feature-section">
+<div class="feature-section general-section-style">
 
 </div>
-<div class="reason-section">
+<div class="reason-section general-section-style">
 
 </div>
 
