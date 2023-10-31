@@ -1,0 +1,15 @@
+﻿
+
+<RadzenPanelMenu DisplayStyle="@(sidebarExpanded ? MenuItemDisplayStyle.IconAndText : MenuItemDisplayStyle.Icon)" ShowArrow="false">
+    <RadzenPanelMenuItem Text="Overview" Icon="home" />
+    <RadzenPanelMenuItem Text="Dashboard" Icon="dashboard" />
+    <RadzenPanelMenuItem Text="UI Fundamentals" Icon="auto_awesome">
+        <RadzenPanelMenuItem Text="Themes" Icon="color_lens" />
+        <RadzenPanelMenuItem Text="Colors" Icon="invert_colors" />
+    </RadzenPanelMenuItem>
+</RadzenPanelMenu>
+
+@code{
+    [Parameter]
+    public bool sidebarExpanded { get; set; }
+}

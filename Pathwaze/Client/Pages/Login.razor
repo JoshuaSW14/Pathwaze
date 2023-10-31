@@ -86,6 +86,7 @@
     {
         newUser.Email = username;
         newUser.Password = password;
+        newUser.AccountType = "User";
         Console.WriteLine("Creating a new user..");
         var response = await UserService.Register(newUser);
         if (response)

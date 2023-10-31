@@ -42,18 +42,24 @@ public class UsersRepository : IUsersRepository
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
 
-            var roleManager = _serviceProvider.GetService<RoleManager<IdentityRole>>();
-            var role = "User";
-
-            IdentityResult IR;
-            if (!await roleManager.RoleExistsAsync(role))
+            switch (userDto.AccountType)
             {
-                IR = await roleManager.CreateAsync(new IdentityRole(role));
+                case "User":
+                    var roleManager = _serviceProvider.GetService<RoleManager<IdentityRole>>();
+                    var role = "User";
+
+                    IdentityResult IR;
+                    if (!await roleManager.RoleExistsAsync(role))
+                    {
+                        IR = await roleManager.CreateAsync(new IdentityRole(role));
+                    }
+
+                    var userManager = _serviceProvider.GetService<UserManager<User>>();
+                    IR = await userManager.AddToRoleAsync(user, role);
+                    break;
+                default:
+                    break;
             }
-
-            var userManager = _serviceProvider.GetService<UserManager<User>>();
-            IR = await userManager.AddToRoleAsync(user, role);
-
             return user;
         }
         catch(Exception ex)

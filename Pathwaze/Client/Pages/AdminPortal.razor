@@ -1,2 +1,26 @@
-﻿
+﻿@page "/portal"
+
+<RadzenLayout>
+    <RadzenHeader>
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0">
+            <RadzenSidebarToggle Click="@(() => sidebarExpanded = !sidebarExpanded)" />
+            <RadzenLabel Text="Header" />
+        </RadzenStack>
+    </RadzenHeader>
+    <RadzenSidebar Responsive="false" Style="width: max-content">
+        <PanelMenu sidebarExpanded="@sidebarExpanded" />
+    </RadzenSidebar>
+    <RadzenBody>
+        <article class="content main-body">
+            @Body
+        </article>
+    </RadzenBody>
+    <RadzenFooter>
+        Footer
+    </RadzenFooter>
+</RadzenLayout>
+
+@code {
+    private bool sidebarExpanded = true;
+}
 
