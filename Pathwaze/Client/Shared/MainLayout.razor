@@ -3,19 +3,16 @@
 
 <div class="page">
     <main>
-        <AuthorizeView Roles="Manager">
-            <Authorized>
-                <AdminPortal />
-            </Authorized>
-            <NotAuthorized>
-                <div>
-                    <NavMenu />
-                </div>
+        <div>
+            <NavMenu />
+        </div>
 
-                <article class="content main-body">
-                    @Body
-                </article>
-            </NotAuthorized>
-        </AuthorizeView>
+        <article class="content main-body">
+            @Body
+        </article>
     </main>
 </div>
+
+@code {
+    private bool sidebarExpanded = true;
+}

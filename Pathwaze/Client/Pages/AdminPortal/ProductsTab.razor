@@ -1,0 +1,75 @@
+﻿@page "/portal/productstab"
+
+@inject DialogService DialogService
+@inject IProductService ProductService 
+
+@using Pathwaze.Shared.Models.Dtos;
+
+<h3>Product</h3>
+
+<div class="d-flex">
+
+    <!-- Main Section -->
+    <div class="col-10">
+        <div class="row d-flex justify-content-between" style="padding-bottom:1rem;">
+            <h2>Controls</h2>
+            <div>
+                <RadzenButton Text=@($"Create") ButtonStyle="ButtonStyle.Secondary" Click=@OpenCreateDialog />
+            </div>
+        </div>
+        <div class="row">
+            <RadzenDataGrid @ref="productsGrid" AllowFiltering="true" FilterPopupRenderMode="PopupRenderMode.OnDemand" AllowPaging="true" PageSize="5" AllowSorting="true"
+                            Data="@products" TItem="ProductDto">
+                <Columns>
+                    <RadzenDataGridColumn Width="50px" TItem="ProductDto" Title="#" Filterable="false" Sortable="false" TextAlign="TextAlign.Center">
+                        <Template Context="data">
+                            @(products.IndexOf(data) + 1)
+                        </Template>
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="ProductDto" Property="Name" Title="Name" />
+                    <RadzenDataGridColumn TItem="ProductDto" Property="Type" Title="Type" />
+                    <RadzenDataGridColumn TItem="ProductDto" Property="Price" Title="Price">
+                        <Template Context="product">
+                            @String.Format(new System.Globalization.CultureInfo("en-US"), "{0:C}", product.Price)
+                        </Template>
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn Width="160px" TItem="ProductDto" Property="DisplayId" Title="Product Details">
+                        <Template Context="data">
+                            <RadzenButton ButtonStyle="ButtonStyle.Info" Variant="Variant.Flat" Shade="Shade.Lighter" Icon="info" class="m-1" Click=@(() => OpenProduct(data.DisplayId)) Text="@data.DisplayId.ToString()" />
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="col-2">
+        <h2>Sidebar</h2>
+    </div>
+</div>
+
+@code {
+    RadzenDataGrid<ProductDto> productsGrid;
+    IList<ProductDto> products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        products = await ProductService.GetProductsByGroceryStore(Guid.NewGuid());
+    }
+
+    async Task OpenProduct(string productId)
+    {
+        // await DialogService.OpenAsync<DialogCardPage>($"Order {orderId}",
+        //       new Dictionary<string, object>() { { "OrderID", orderId } },
+        //       new DialogOptions() { Width = "700px", Height = "520px" });
+    }
+
+    private async void OpenCreateDialog()
+    {
+        await DialogService.OpenAsync<CreateProductDialog>("Create New Product", null,
+               new DialogOptions() { Width = "700px", Height = "512px", Resizable = false, Draggable = false });
+    }
+}

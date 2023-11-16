@@ -1,10 +1,4 @@
-﻿using System;
-using System.Data;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.DependencyInjection;
-using Pathwaze.Server.Interfaces;
-
-namespace Pathwaze.Server.Repositories;
+﻿namespace Pathwaze.Server.Repositories;
 
 public class UsersRepository : IUsersRepository
 {
@@ -37,8 +31,21 @@ public class UsersRepository : IUsersRepository
                 Email = userDto.Email,
                 UserName = userDto.Email,
                 PhoneNumber = userDto.PhoneNumber,
-                PasswordHash = hashedPassword
+                PasswordHash = hashedPassword,
+                AccountType = userDto.AccountType,
             };
+
+            switch (userDto.AccountType)
+            {
+                case "manager":
+                    GroceryStore gs = new GroceryStore()
+                    {
+                        Name = "Grocery Store Name",
+                    };
+                    user.GroceryStore = gs;
+                    break;
+            }
+
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
 
@@ -74,6 +81,7 @@ public class UsersRepository : IUsersRepository
 		try
 		{
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == loginDto.Username);
+
             if (user == null)
             {
                 return null!;
@@ -91,7 +99,8 @@ public class UsersRepository : IUsersRepository
             var claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.Email!),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim("groceryStoreId", user.GroceryStore!.Id.ToString())
             };
 
             foreach (var role in roles)

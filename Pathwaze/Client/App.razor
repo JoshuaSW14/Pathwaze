@@ -1,19 +1,39 @@
-﻿<CascadingAuthenticationState>
+﻿@using Pathwaze.Client.Pages
+
+<CascadingAuthenticationState>
     <Router AppAssembly="@typeof(App).Assembly">
         <Found Context="routeData">
-            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
-                <Authorizing>
-                    <text>Please wait, we are authorizint the user.</text>
-                </Authorizing>
-            </AuthorizeRouteView>
-            @*<RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-                <FocusOnNavigate RouteData="@routeData" Selector="h1" />*@
+            <AuthorizeView Roles="Manager">
+                <Authorized>
+                    <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(Portal)">
+                        <Authorizing>
+                            <text>Please wait, we are authorizint the user.</text>
+                        </Authorizing>
+                    </AuthorizeRouteView>
+                </Authorized>
+                <NotAuthorized>
+                    <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
+                        <Authorizing>
+                            <text>Please wait, we are authorizint the user.</text>
+                        </Authorizing>
+                    </AuthorizeRouteView>
+                </NotAuthorized>
+            </AuthorizeView>
         </Found>
         <NotFound>
             <PageTitle>Not found</PageTitle>
-            <LayoutView Layout="@typeof(MainLayout)">
-                <p role="alert">Sorry, there's nothing at this address.</p>
-            </LayoutView>
+            <AuthorizeView Roles="Manager">
+                <Authorized>
+                    <LayoutView Layout="@typeof(Portal)">
+                        <p role="alert">Sorry, there's nothing at this address.</p>
+                    </LayoutView>
+                </Authorized>
+                <NotAuthorized>
+                    <LayoutView Layout="@typeof(MainLayout)">
+                        <p role="alert">Sorry, there's nothing at this address.</p>
+                    </LayoutView>
+                </NotAuthorized>
+            </AuthorizeView>
         </NotFound>
     </Router>
 </CascadingAuthenticationState>

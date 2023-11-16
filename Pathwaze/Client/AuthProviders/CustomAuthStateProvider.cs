@@ -2,17 +2,18 @@
 using Microsoft.JSInterop;
 using Pathwaze.Client.Services;
 using System.Security.Claims;
-using System.Text.Json;
 
 namespace Pathwaze.Client.AuthProviders;
 
 public class CustomAuthStateProvider : AuthenticationStateProvider
 {
     private readonly IJSRuntime _jsRuntime;
+    private readonly StateContainer _stateContainer;
 
-    public CustomAuthStateProvider(IJSRuntime jsRuntime)
+    public CustomAuthStateProvider(IJSRuntime jsRuntime, StateContainer stateContainer)
     {
         _jsRuntime = jsRuntime;
+        _stateContainer = stateContainer;
     }
 
     public async Task<string> GetTokenAsync()
@@ -35,9 +36,16 @@ public class CustomAuthStateProvider : AuthenticationStateProvider
     public override async Task<AuthenticationState> GetAuthenticationStateAsync()
     {
         var token = await GetTokenAsync();
-        var identity = string.IsNullOrEmpty(token)
-            ? new ClaimsIdentity()
-            : new ClaimsIdentity(ParseClaimsFromJwt(token), "jwt");
+        if (string.IsNullOrEmpty(token))
+        {
+            return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity()));
+        }
+
+        var claims = ParseClaimsFromJwt(token);
+        _stateContainer.SetGroceryIdFromClaims(claims);
+        
+        var identity = new ClaimsIdentity(claims, "jwt");
+
         return new AuthenticationState(new ClaimsPrincipal(identity));
     }
 
@@ -45,7 +53,7 @@ public class CustomAuthStateProvider : AuthenticationStateProvider
     {
         var payload = jwt.Split('.')[1];
         var jsonBytes = ParseBase64WithoutPadding(payload);
-        var keyValuePairs = JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
+        var keyValuePairs = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
         return keyValuePairs.Select(kvp => new Claim(kvp.Key, kvp.Value.ToString()));
     }
 

@@ -13,5 +13,7 @@ public class User : IdentityUser
     public virtual Address? Address { get; set; }
     public virtual Preferences? Preferences { get; set; }
     public virtual RecipeBook? RecipeBook { get; set; }
+    public virtual GroceryStore? GroceryStore { get; set; }
+    public virtual Supplier? Supplier { get; set; }
 }
 

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Pathwaze.Shared.Models.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace Pathwaze.Shared.Models.Dtos;
 
@@ -24,4 +25,7 @@ public class UserDto
     public string? Password { get; set; }
 
     public string? AccountType { get; set; }
+
+    public virtual GroceryStore? GroceryStore { get; set; }
+    public virtual Supplier? Supplier { get; set; }
 }

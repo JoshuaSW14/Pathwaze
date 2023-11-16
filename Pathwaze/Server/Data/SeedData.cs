@@ -18,20 +18,20 @@ public class SeedData
         {
             _usersRepository = serviceProvider.GetService<IUsersRepository>()!;
 
-            var adminID = await EnsureUser(serviceProvider, testUserPw, "admin@pathwaze.com");
+            var adminID = await EnsureUser(serviceProvider, testUserPw, "admin@pathwaze.com", "admin");
             await EnsureRole(serviceProvider, adminID, "Administrator");
 
-            var managerID = await EnsureUser(serviceProvider, testUserPw, "manager@pathwaze.com");
+            var managerID = await EnsureUser(serviceProvider, testUserPw, "manager@pathwaze.com", "manager");
             await EnsureRole(serviceProvider, managerID, "Manager");
 
-            var userID = await EnsureUser(serviceProvider, testUserPw, "user@pathwaze.com");
+            var userID = await EnsureUser(serviceProvider, testUserPw, "user@pathwaze.com", "user");
             await EnsureRole(serviceProvider, userID, "User");
 
             SeedDB(context, adminID);
         }
     }
     
-    private async Task<string> EnsureUser(IServiceProvider serviceProvider, string testUserPw, string UserName)
+    private async Task<string> EnsureUser(IServiceProvider serviceProvider, string testUserPw, string UserName, string accountType)
     {
         var userManager = serviceProvider.GetService<UserManager<User>>();
 
@@ -41,7 +41,8 @@ public class SeedData
             user = await _usersRepository.Register(new UserDto()
             {
                 Email = UserName,
-                Password = testUserPw
+                Password = testUserPw,
+                AccountType = accountType
             });
         }
 

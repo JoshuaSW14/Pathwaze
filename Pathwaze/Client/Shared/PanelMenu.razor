@@ -1,12 +1,11 @@
 ﻿
 
 <RadzenPanelMenu DisplayStyle="@(sidebarExpanded ? MenuItemDisplayStyle.IconAndText : MenuItemDisplayStyle.Icon)" ShowArrow="false">
-    <RadzenPanelMenuItem Text="Overview" Icon="home" />
-    <RadzenPanelMenuItem Text="Dashboard" Icon="dashboard" />
-    <RadzenPanelMenuItem Text="UI Fundamentals" Icon="auto_awesome">
-        <RadzenPanelMenuItem Text="Themes" Icon="color_lens" />
-        <RadzenPanelMenuItem Text="Colors" Icon="invert_colors" />
-    </RadzenPanelMenuItem>
+    <RadzenPanelMenuItem Text="Dashboard" Icon="dashboard" Path="portal/dashboard" />
+    <RadzenPanelMenuItem Text="Product Management" Icon="inventory_2" Path="portal/productstab" />
+    <RadzenPanelMenuItem Text="Supplier Management" Icon="group_work" Path="portal/supplierstab" />
+    <RadzenPanelMenuItem Text="User Reviews" Icon="rate_review" Path="portal/userreviews" />
+    <RadzenPanelMenuItem Text="Settings" Icon="settings" Path="portal/settings" />
 </RadzenPanelMenu>
 
 @code{

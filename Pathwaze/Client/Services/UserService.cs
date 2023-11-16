@@ -1,12 +1,4 @@
-﻿using Newtonsoft.Json;
-using Pathwaze.Client.AuthProviders;
-using Pathwaze.Client.Interfaces;
-using Pathwaze.Shared.Models.Dtos;
-using System.Text;
-using System.Text.Json;
-using JsonSerializer = System.Text.Json.JsonSerializer;
-
-namespace Pathwaze.Client.Services;
+﻿namespace Pathwaze.Client.Services;
 
 public class UserService : IUserService
 {
@@ -33,7 +25,8 @@ public class UserService : IUserService
             if (response.IsSuccessStatusCode)
             {
                 var stringContent = await response.Content.ReadAsStringAsync();
-                var result = JsonSerializer.Deserialize<LoginResultDto>(stringContent, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
+                var result = JsonConvert.DeserializeObject<LoginResultDto>(stringContent);
+                //var result = JsonSerializer.Deserialize<LoginResultDto>(stringContent, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
                 await _customAuthStateProvider.SetTokenAsync(result?.Token!);
 
                 return true;
