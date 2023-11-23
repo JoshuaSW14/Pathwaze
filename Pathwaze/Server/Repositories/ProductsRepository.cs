@@ -1,4 +1,6 @@
-﻿namespace Pathwaze.Server.Repositories;
+﻿using Radzen;
+
+namespace Pathwaze.Server.Repositories;
 
 public class ProductsRepository : IProductsRepository
 {
@@ -47,7 +49,7 @@ public class ProductsRepository : IProductsRepository
         {
             if (groceryStoreId != Guid.Empty)
             {
-                var product = await _context.Products.Where(p => p.GroceryStoreId == groceryStoreId).ToArrayAsync();
+                var product = await _context.Products.Where(p => p.GroceryStore.Id == groceryStoreId).ToArrayAsync();
                 if (product != null)
                     return product.Adapt<List<ProductDto>>();
             }
@@ -65,7 +67,7 @@ public class ProductsRepository : IProductsRepository
         {
             if (supplierId != Guid.Empty)
             {
-                var product = await _context.Products.Where(p => p.SupplierId == supplierId).ToArrayAsync();
+                var product = await _context.Products.Where(p => p.Supplier.Id == supplierId).ToArrayAsync();
                 if (product != null)
                     return product.Adapt<List<ProductDto>>();
             }
@@ -81,7 +83,7 @@ public class ProductsRepository : IProductsRepository
     {
         try
         {
-            if(productDto != null)
+            if (productDto != null)
             {
                 Product product = productDto.Adapt<Product>();
                 await _context.Products.AddAsync(product);

@@ -28,11 +28,6 @@
                     </RadzenDataGridColumn>
                     <RadzenDataGridColumn TItem="ProductDto" Property="Name" Title="Name" />
                     <RadzenDataGridColumn TItem="ProductDto" Property="Type" Title="Type" />
-                    <RadzenDataGridColumn TItem="ProductDto" Property="Price" Title="Price">
-                        <Template Context="product">
-                            @String.Format(new System.Globalization.CultureInfo("en-US"), "{0:C}", product.Price)
-                        </Template>
-                    </RadzenDataGridColumn>
                     <RadzenDataGridColumn Width="160px" TItem="ProductDto" Property="DisplayId" Title="Product Details">
                         <Template Context="data">
                             <RadzenButton ButtonStyle="ButtonStyle.Info" Variant="Variant.Flat" Shade="Shade.Lighter" Icon="info" class="m-1" Click=@(() => OpenProduct(data.DisplayId)) Text="@data.DisplayId.ToString()" />
@@ -69,7 +64,7 @@
 
     private async void OpenCreateDialog()
     {
-        await DialogService.OpenAsync<CreateProductDialog>("Create New Product", null,
+        await DialogService.OpenAsync<CreateProductDialog>(null, null,
                new DialogOptions() { Width = "700px", Height = "512px", Resizable = false, Draggable = false });
     }
 }

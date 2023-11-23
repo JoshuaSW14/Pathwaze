@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Pathwaze.Server.Data;
 
@@ -11,9 +12,11 @@ using Pathwaze.Server.Data;
 namespace Pathwaze.Server.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231120012946_AddedBaseEntity")]
+    partial class AddedBaseEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -251,23 +254,14 @@ namespace Pathwaze.Server.Migrations
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("CreationUserId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<bool>("Deleted")
                         .HasColumnType("bit");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("GroceryStoreId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<DateTime>("LastUpdatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<Guid>("LastUpdatedUserId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("LocationId")
                         .HasColumnType("uniqueidentifier");
@@ -284,23 +278,16 @@ namespace Pathwaze.Server.Migrations
                     b.Property<Guid?>("ProductId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("SupplierId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Type")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("GroceryStoreId");
 
                     b.HasIndex("LocationId");
 
                     b.HasIndex("NutritionId");
 
                     b.HasIndex("ProductId");
-
-                    b.HasIndex("SupplierId");
 
                     b.ToTable("Items");
                 });
@@ -683,12 +670,6 @@ namespace Pathwaze.Server.Migrations
 
             modelBuilder.Entity("Pathwaze.Shared.Models.Entities.Item", b =>
                 {
-                    b.HasOne("Pathwaze.Shared.Models.Entities.GroceryStore", "GroceryStore")
-                        .WithMany()
-                        .HasForeignKey("GroceryStoreId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Pathwaze.Shared.Models.Entities.Location", "Location")
                         .WithMany()
                         .HasForeignKey("LocationId");
@@ -701,17 +682,9 @@ namespace Pathwaze.Server.Migrations
                         .WithMany("Items")
                         .HasForeignKey("ProductId");
 
-                    b.HasOne("Pathwaze.Shared.Models.Entities.Supplier", "Supplier")
-                        .WithMany()
-                        .HasForeignKey("SupplierId");
-
-                    b.Navigation("GroceryStore");
-
                     b.Navigation("Location");
 
                     b.Navigation("Nutrition");
-
-                    b.Navigation("Supplier");
                 });
 
             modelBuilder.Entity("Pathwaze.Shared.Models.Entities.Product", b =>

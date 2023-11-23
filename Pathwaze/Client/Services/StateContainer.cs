@@ -16,9 +16,10 @@ public class StateContainer
 
     public void SetGroceryIdFromClaims(IEnumerable<Claim> claims)
     {
-        var groceryIdClaim = claims.FirstOrDefault(c => c.Type == "groceryId"); // use the actual claim type
+        var groceryIdClaim = claims.FirstOrDefault(c => c.Type == "groceryStoreId"); // use the actual claim type
         if (groceryIdClaim != null && Guid.TryParse(groceryIdClaim.Value, out Guid gsId))
         {
+            Console.WriteLine("---- SETTING GROCERY STORE ID: " + gsId);
             SetGroceryStoreId(gsId);
         }
     }

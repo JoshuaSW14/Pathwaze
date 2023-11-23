@@ -1,21 +1,24 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Pathwaze.Server.Interfaces;
+﻿using Pathwaze.Server.Services;
 
 namespace Pathwaze.Server.Data;
 
 public class SeedData
 {
     private IUsersRepository _usersRepository;
+    private ICurrentUserService _currentUserService;
 
-    public SeedData(IUsersRepository usersRepository)
+    public SeedData(IUsersRepository usersRepository, ICurrentUserService currentUserService)
     {
         _usersRepository = usersRepository;
+        _currentUserService = currentUserService;
     }
 
     public async Task Initialize(IServiceProvider serviceProvider, string testUserPw)
     {
         using (var context = new AppDbContext(serviceProvider.GetRequiredService<DbContextOptions<AppDbContext>>()))
         {
+            context.IsSeedingOperation = true;
+
             _usersRepository = serviceProvider.GetService<IUsersRepository>()!;
 
             var adminID = await EnsureUser(serviceProvider, testUserPw, "admin@pathwaze.com", "admin");

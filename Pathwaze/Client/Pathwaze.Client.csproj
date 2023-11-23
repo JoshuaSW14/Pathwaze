@@ -29,9 +29,11 @@
 
   <ItemGroup>
     <None Remove="AuthProviders\" />
+    <None Remove="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AuthProviders\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="wwwroot\js\GoogleMaps.js">

@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.JSInterop;
-using Pathwaze.Client.Services;
 using System.Security.Claims;
 
 namespace Pathwaze.Client.AuthProviders;

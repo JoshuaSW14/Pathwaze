@@ -38,10 +38,13 @@
     <None Remove="Data\" />
     <None Remove="Repositories\" />
     <None Remove="Interfaces\" />
+    <None Remove="Services\" />
+    <None Remove="Middleware\" />
   </ItemGroup>
 
 
   <ItemGroup>
-    <Folder Include="Helpers\" />
+    <Folder Include="Services\" />
+    <Folder Include="Middleware\" />
   </ItemGroup>
 </Project>

@@ -80,7 +80,9 @@ public class UsersRepository : IUsersRepository
 	{
 		try
 		{
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == loginDto.Username);
+            var user = await _context.Users
+                .Include(u => u.GroceryStore)
+                .FirstOrDefaultAsync(u => u.Email == loginDto.Username);
 
             if (user == null)
             {
@@ -98,10 +100,13 @@ public class UsersRepository : IUsersRepository
 
             var claims = new List<Claim>
             {
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new Claim(JwtRegisteredClaimNames.Sub, user.Email!),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim("groceryStoreId", user.GroceryStore!.Id.ToString())
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
+
+            if(user.GroceryStore != null)
+                claims.Add(new Claim("groceryStoreId", user.GroceryStore!.Id.ToString()));
 
             foreach (var role in roles)
             {

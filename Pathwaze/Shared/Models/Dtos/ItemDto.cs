@@ -5,13 +5,18 @@ namespace Pathwaze.Shared.Models.Dtos;
 public class ItemDto
 {
     public Guid Id { get; set; }
-    public string Name { get; set; }
-    public string Type { get; set; }
+    public string? Name { get; set; }
+    public string? Type { get; set; }
     public decimal Cost { get; set; }
-    public string Supplier { get; set; }
-    public string Description { get; set; }
-    public virtual GroceryStore GroceryStore { get; set; }
-    public virtual LocationDto? Location { get; set; } = new LocationDto();
+    public string? Description { get; set; }
+    public bool Primary { get; set; }
+
+    public Guid GroceryStoreId { get; set; }
+
+    public virtual GroceryStore? GroceryStore { get; set; }
+    public virtual LocationDto Location { get; set; } = new LocationDto();
+    public virtual Supplier? Supplier { get; set; }
+    public virtual Nutrition? Nutrition { get; set; }
 
     //Future
     /*

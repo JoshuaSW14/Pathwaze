@@ -1,93 +1,86 @@
 ﻿@inject IProductService ProductService
 @inject IJSRuntime jsRuntime
+@inject DialogService DialogService
+@inject StateContainer stateContainer
+
+<h3>Create New Product</h3>
 
 <RadzenRow Gap="1rem">
     <RadzenColumn Size="12">
         <RadzenStack>
-            <RadzenFormField Text="Name" Variant="@Variant.Outlined">
-                <RadzenTextBox @bind-Value="@productDto.Name" />
-            </RadzenFormField>
-            
-            <div id="search-container">
-                <RadzenDropDown Data=@search TValue="string" @bind-Value=@productDto.AutoComplete
-                                AllowClear="true" AllowFiltering="true" Style="width: 100%; max-width: 400px;" id="dropdown-search">
-                </RadzenDropDown>
-            </div>
-            
 
-            @* <RadzenFormField Text="Location" Variant="@Variant.Outlined">
-                    <RadzenTextBox @bind-Value="productDto.AutoComplete" Style="width:200px; display: block" Name="Location" id="pac-input" Placeholder="Search Box" AutoComplete="true"/>
-            </RadzenFormField> *@
+            <!-- Name of Product -->
+            <RadzenFormField Text="Name" Variant="@Variant.Outlined">
+                <RadzenTextBox @bind-Value="@itemDto.Name" />
+            </RadzenFormField>
+
+            <!-- Type of Product -->
+            <RadzenFormField Text="Type" Variant="@Variant.Outlined">
+                <RadzenDropDown Data=@types @bind-Value="@itemDto.Type" />
+            </RadzenFormField>
+
+            <!-- Cost of Product -->
+            <RadzenFormField Text="Cost" Variant="@Variant.Outlined">
+                <RadzenNumeric @bind-Value="itemDto.Cost" />
+            </RadzenFormField>
+
+            <!-- Location of Product -->
+            <RadzenFormField id="search-container" Text="Location" Variant="@Variant.Outlined">
+                <RadzenDropDown Data=@search TValue="string" @bind-Value=@itemDto.Location.Name
+                                AllowClear="true" AllowFiltering="true" Style="width: 100%;" id="dropdown-search">
+                </RadzenDropDown>
+            </RadzenFormField>
+
+            <!-- Description of Product -->
+            <RadzenFormField Text="Description" Variant="@Variant.Outlined">
+                <RadzenTextBox @bind-Value="itemDto.Description" Style="width:200px; display: block" Name="Description" />
+            </RadzenFormField>
+
         </RadzenStack>
-        <RadzenStack>
-            <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle_outline" class="mt-2 mb-4" Text="Add New Item" Click="@InsertRow" />
-            <RadzenDataGrid @ref="itemsGrid" Data="@items" TItem="ItemDto" ColumnWidth="200px">
-                <Columns>
-                    <RadzenDataGridColumn TItem="ItemDto" Property="Name" Title="Name">
-                        <EditTemplate Context="item">
-                            <RadzenTextBox @bind-Value="item.Name" Style="width:200px; display: block" Name="Name" />
-                            <RadzenRequiredValidator Text="Name is required" Component="Name" Popup="true" />
-                        </EditTemplate>
-                    </RadzenDataGridColumn>
-                    <RadzenDataGridColumn TItem="ItemDto" Property="Type" Title="Type" Width="280px">
-                        <EditTemplate Context="item">
-                            <RadzenDropDown Data=@types @bind-Value="@productDto.Type" />
-                        </EditTemplate>
-                    </RadzenDataGridColumn>
-                    <RadzenDataGridColumn TItem="ItemDto" Property="Cost" Title="Cost">
-                        <Template Context="item">
-                            @String.Format(new System.Globalization.CultureInfo("en-US"), "{0:C}", item.Cost)
-                        </Template>
-                        <EditTemplate Context="item">
-                            <RadzenNumeric @bind-Value="item.Cost" Style="width:100%" />
-                        </EditTemplate>
-                    </RadzenDataGridColumn>
-                    <RadzenDataGridColumn TItem="ItemDto" Property="Description" Title="Description">
-                        <EditTemplate Context="item">
-                            <RadzenTextBox @bind-Value="item.Description" Style="width:200px; display: block" Name="Description" />
-                        </EditTemplate>
-                    </RadzenDataGridColumn>
-                    <RadzenDataGridColumn TItem="ItemDto" Context="item" Filterable="false" Sortable="false" TextAlign="TextAlign.Right" Frozen="true">
-                        <Template Context="item">
-                            <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium" Click="@(args => EditRow(item))" @onclick:stopPropagation="true">
-                            </RadzenButton>
-                            <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Variant="Variant.Flat" Shade="Shade.Lighter" Size="ButtonSize.Medium" class="my-1 ms-1" Click="@(args => DeleteRow(item))" @onclick:stopPropagation="true">
-                            </RadzenButton>
-                        </Template>
-                        <EditTemplate Context="item">
-                            <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium" class="my-1 ms-1" Click="@((args) => CancelEdit(item))">
-                            </RadzenButton>
-                            <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Variant="Variant.Flat" Shade="Shade.Lighter" Size="ButtonSize.Medium" class="my-1 ms-1" Click="@(args => DeleteRow(item))">
-                            </RadzenButton>
-                        </EditTemplate>
-                    </RadzenDataGridColumn>
-                </Columns>
-            </RadzenDataGrid>
-        </RadzenStack>
-        <RadzenButton Click=@OnSaveHandler Text="Save" ButtonStyle="ButtonStyle.Primary" />
-        <RadzenButton Click=@OnCancelHandler Text="Cancel" ButtonStyle="ButtonStyle.Secondary" />
+
+        @if (!hideTable)
+        {
+            <RadzenStack>
+                <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle_outline" class="m-3" Text="Add New Item" Click="AddItem" />
+                <RadzenDataGrid @ref="itemsGrid" Data="@productDto.Items" TItem="ItemDto">
+                    <Columns>
+                        <RadzenDataGridColumn TItem="ItemDto" Property="Name" Title="Name" TextAlign="TextAlign.Center" />
+                        <RadzenDataGridColumn TItem="ItemDto" Property="Type" Title="Type" TextAlign="TextAlign.Center" />
+                        <RadzenDataGridColumn TItem="ItemDto" Context="item" Filterable="false" Sortable="false" TextAlign="TextAlign.Right" Frozen="true" />
+                    </Columns>
+                </RadzenDataGrid>
+            </RadzenStack>
+        }
+
+        <div class="d-flex justify-content-end mt-4">
+            <RadzenButton Click=@OnSaveHandler Text="Save" ButtonStyle="ButtonStyle.Primary" class="m-2" />
+            @if (hideTable)
+            {
+                <RadzenButton Click=@AddItem Text="Add Item" ButtonStyle="ButtonStyle.Light" class="m-2" />
+            }
+            <RadzenButton Click=@OnCancelHandler Text="Cancel" ButtonStyle="ButtonStyle.Secondary" class="m-2" />
+        </div>
     </RadzenColumn>
 </RadzenRow>
 
 @code {
+    private ItemDto itemDto { get; set; } = new ItemDto();
     private ProductDto productDto { get; set; } = new ProductDto();
-    private string[] types { get; set; } = new[] { "TypeOne", "TypeTwo" };
+
+    private string[] types { get; set; } = new[] {
+        "Fruits and Vegetables", "Dairy and Eggs", "Meat and Seafood", "Bakery", "Frozen Foods", "Pantry Staples", "Snacks and Confectionery", "Beverages", "Health and Beauty", "Household Goods"
+    };
+
     private List<string> search = new List<string>();
 
     RadzenDataGrid<ItemDto> itemsGrid;
-    IEnumerable<ItemDto>? items = new List<ItemDto>();
 
-    ItemDto itemToUpdate;
-    ItemDto itemToInsert;
+    private bool hideTable { get; set; } = false;
 
-    private int itemCount = 0; // A counter to generate unique IDs
-
-    private IJSObjectReference _jsConnection;
-
-    private void Reset()
+    protected override async Task OnInitializedAsync()
     {
-        itemToInsert = null;
-        itemToUpdate = null;
+        await base.OnInitializedAsync();
+        productDto.Items = new List<ItemDto>();
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -105,33 +98,9 @@
         StateHasChanged();
     }
 
-    async Task EditRow(ItemDto item)
-    {
-        itemToUpdate = item;
-        await itemsGrid.EditRow(item);
-    }
-
-    void OnUpdateRow(ItemDto item)
-    {
-        Reset();
-    }
-
-    async Task SaveRow(ItemDto item)
-    {
-        await itemsGrid.UpdateRow(item);
-    }
-
-    void CancelEdit(ItemDto item)
-    {
-        Reset();
-        itemsGrid.CancelEditRow(item);
-    }
-
     async Task DeleteRow(ItemDto item)
     {
-        Reset();
-
-        if (items.Contains(item))
+        if (productDto.Items != null && productDto.Items.Contains(item))
         {
             await itemsGrid.Reload();
         }
@@ -142,19 +111,9 @@
         }
     }
 
-    async Task InsertRow()
-    {
-        itemToInsert = new ItemDto();
-        await itemsGrid.InsertRow(itemToInsert);
-    }
-
-    void OnCreateRow(ItemDto item)
-    {
-        itemToInsert = null;
-    }
-
     private async void OnSaveHandler()
     {
+        Console.WriteLine("Product: " + productDto.Items.Count());
         var response = await ProductService.CreateProduct(productDto);
         if (response)
             Console.WriteLine("Product Saved!");
@@ -164,6 +123,33 @@
 
     private void OnCancelHandler()
     {
-        
+        DialogService.Close();
+    }
+
+    private async Task AddItem()
+    {
+        Console.WriteLine("itemDto: " + itemDto.Name);
+        //Insert item into list
+        if (itemDto != null)
+        {
+            itemDto.GroceryStoreId = stateContainer.GroceryStoreId;
+            Console.WriteLine("GroceryStoreId: " + itemDto.GroceryStoreId);
+            //Make table visible (if not already)
+            //if (hideTable)
+            //    hideTable = false;
+            //StateHasChanged();
+
+            Console.WriteLine("INSIDE!!");
+            //productDto.Items.Append(itemDto);
+            productDto.Items.Add(itemDto);
+            Console.WriteLine("Item Added = " + itemDto.Name);
+            Console.WriteLine("Confirmed updated count = " + productDto.Items.Count());
+            if (itemsGrid != null)
+                await itemsGrid.InsertRow(itemDto);
+            StateHasChanged();
+        }
+
+        //Clear the item
+        itemDto = new();
     }
 }

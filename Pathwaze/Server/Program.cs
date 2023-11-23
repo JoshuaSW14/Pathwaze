@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
-using Pathwaze.Server.Interfaces;
+using Pathwaze.Server.Middleware;
 using Pathwaze.Server.Repositories;
+using Pathwaze.Server.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,13 +15,19 @@ builder.Services.AddCors(policy =>
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
+
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddIdentity<User, IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
 
+builder.Services.AddScoped<UserContext>();
 builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+builder.Services.AddScoped<IProductsRepository, ProductsRepository>();
 builder.Services.AddScoped<SeedData>();
 
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
@@ -48,10 +54,8 @@ builder.Services.AddAuthentication(x =>
     };
 });
 builder.Services.AddAuthorization();
-
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
-
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
@@ -88,6 +92,10 @@ app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
+app.UseMiddleware<UserContextMiddleware>();
 
 app.UseCors("CorsPolicy");
 
