@@ -1,4 +1,6 @@
-﻿namespace Pathwaze.Client.Services;
+﻿using Pathwaze.Shared.Models.Entities;
+
+namespace Pathwaze.Client.Services;
 
 public class ProductService : IProductService
 {
@@ -49,6 +51,29 @@ public class ProductService : IProductService
         catch (Exception ex)
         {
             _logger.LogError(ex, "ProductService.GetAllProducts failed with: " + ex.Message);
+        }
+        return null!;
+    }
+
+    public async Task<List<ItemDto>> SearchProducts(SearchDto searchDto)
+    {
+        try
+        {
+            HttpRequestMessage httpRequest = new HttpRequestMessage(HttpMethod.Post, $"{_httpClient.BaseAddress!.AbsoluteUri}/SearchProducts");
+            string jsonRequest = JsonConvert.SerializeObject(searchDto);
+            httpRequest.Content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.SendAsync(httpRequest);
+            if (response.IsSuccessStatusCode)
+            {
+                var stringContent = await response.Content.ReadAsStringAsync();
+                var result = JsonConvert.DeserializeObject<List<ItemDto>>(stringContent);
+                return result!;
+            }
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "ProductService.SearchProducts failed with: " + ex.Message);
         }
         return null!;
     }

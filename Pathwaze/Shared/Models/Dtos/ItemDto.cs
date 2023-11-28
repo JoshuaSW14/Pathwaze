@@ -1,6 +1,4 @@
-﻿using Pathwaze.Shared.Models.Entities;
-
-namespace Pathwaze.Shared.Models.Dtos;
+﻿namespace Pathwaze.Shared.Models.Dtos;
 
 public class ItemDto
 {
@@ -15,7 +13,6 @@ public class ItemDto
 
     public virtual GroceryStore? GroceryStore { get; set; }
     public virtual LocationDto Location { get; set; } = new LocationDto();
-    public virtual Supplier? Supplier { get; set; }
     public virtual Nutrition? Nutrition { get; set; }
 
     //Future

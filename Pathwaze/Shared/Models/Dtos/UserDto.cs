@@ -1,7 +1,4 @@
-﻿using Pathwaze.Shared.Models.Entities;
-using System.ComponentModel.DataAnnotations;
-
-namespace Pathwaze.Shared.Models.Dtos;
+﻿namespace Pathwaze.Shared.Models.Dtos;
 
 public class UserDto
 {

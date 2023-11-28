@@ -1,6 +1,4 @@
-﻿using System.Security.Claims;
-
-namespace Pathwaze.Client.Services;
+﻿namespace Pathwaze.Client.Services;
 
 public class StateContainer
 {
@@ -18,10 +16,7 @@ public class StateContainer
     {
         var groceryIdClaim = claims.FirstOrDefault(c => c.Type == "groceryStoreId"); // use the actual claim type
         if (groceryIdClaim != null && Guid.TryParse(groceryIdClaim.Value, out Guid gsId))
-        {
-            Console.WriteLine("---- SETTING GROCERY STORE ID: " + gsId);
             SetGroceryStoreId(gsId);
-        }
     }
 
     private void NotifyStateChanged() => OnChange?.Invoke();

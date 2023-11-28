@@ -46,7 +46,9 @@
                     <Columns>
                         <RadzenDataGridColumn TItem="ItemDto" Property="Name" Title="Name" TextAlign="TextAlign.Center" />
                         <RadzenDataGridColumn TItem="ItemDto" Property="Type" Title="Type" TextAlign="TextAlign.Center" />
-                        <RadzenDataGridColumn TItem="ItemDto" Context="item" Filterable="false" Sortable="false" TextAlign="TextAlign.Right" Frozen="true" />
+                    
+                        <!-- TODO: Add menu columns for switching the primary item and removing an item from the list -->
+                    
                     </Columns>
                 </RadzenDataGrid>
             </RadzenStack>
@@ -81,6 +83,8 @@
     {
         await base.OnInitializedAsync();
         productDto.Items = new List<ItemDto>();
+        itemDto.Primary = true;
+        productDto.GroceryStoreId = stateContainer.GroceryStoreId;
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -133,14 +137,6 @@
         if (itemDto != null)
         {
             itemDto.GroceryStoreId = stateContainer.GroceryStoreId;
-            Console.WriteLine("GroceryStoreId: " + itemDto.GroceryStoreId);
-            //Make table visible (if not already)
-            //if (hideTable)
-            //    hideTable = false;
-            //StateHasChanged();
-
-            Console.WriteLine("INSIDE!!");
-            //productDto.Items.Append(itemDto);
             productDto.Items.Add(itemDto);
             Console.WriteLine("Item Added = " + itemDto.Name);
             Console.WriteLine("Confirmed updated count = " + productDto.Items.Count());

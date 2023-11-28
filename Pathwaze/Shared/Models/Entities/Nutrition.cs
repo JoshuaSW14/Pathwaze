@@ -1,6 +1,6 @@
 ﻿namespace Pathwaze.Shared.Models.Entities;
 
-public class Nutrition
+public class Nutrition : BaseEntity
 {
     public Guid Id { get; set; }
     public int Calories { get; set; }

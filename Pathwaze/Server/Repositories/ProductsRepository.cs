@@ -43,6 +43,21 @@ public class ProductsRepository : IProductsRepository
         return null!;
     }
 
+    public async Task<List<ItemDto>> SearchProducts(SearchDto searchDto)
+    {
+        try
+        {
+            var products = await _context.Items.Where(item => item.Primary == true).ToArrayAsync();
+            if (products != null)
+                return products.Adapt<List<ItemDto>>();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error Occurred in the Products Repository: " + ex.Message);
+        }
+        return null!;
+    }
+
     public async Task<List<ProductDto>> GetProductsByGroceryStore(Guid groceryStoreId)
     {
         try

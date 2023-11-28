@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using System.Threading;
 namespace Pathwaze.Server.Data;
 
 public class AppDbContext : IdentityDbContext<User>
@@ -24,10 +25,9 @@ public class AppDbContext : IdentityDbContext<User>
 	public DbSet<Supplier> Suppliers { get; set; }
 	public DbSet<Recipe> Recipes { get; set; }
 	public DbSet<RecipeBook> RecipeBooks { get; set; }
-	public DbSet<Address> Addresses { get; set; }
 	public DbSet<Location> Locations { get; set; }
 
-    public async Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess)
+    public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
         if (!IsSeedingOperation)
         {
@@ -39,9 +39,11 @@ public class AppDbContext : IdentityDbContext<User>
                 var entity = entityEntry.Entity;
                 entity.CreationDate = DateTime.UtcNow;
                 entity.CreationUserId = Guid.Parse(_userContext.CurrentUserId);
+                entity.LastUpdatedDate = DateTime.UtcNow;
+                entity.LastUpdatedUserId = Guid.Parse(_userContext.CurrentUserId);
             }
         }
-        return await base.SaveChangesAsync(acceptAllChangesOnSuccess);
+        return await base.SaveChangesAsync(cancellationToken);
     }
 }
 

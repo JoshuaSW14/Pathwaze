@@ -28,11 +28,6 @@
                     </RadzenDataGridColumn>
                     <RadzenDataGridColumn TItem="ProductDto" Property="Name" Title="Name" />
                     <RadzenDataGridColumn TItem="ProductDto" Property="Type" Title="Type" />
-                    <RadzenDataGridColumn Width="160px" TItem="ProductDto" Property="DisplayId" Title="Product Details">
-                        <Template Context="data">
-                            <RadzenButton ButtonStyle="ButtonStyle.Info" Variant="Variant.Flat" Shade="Shade.Lighter" Icon="info" class="m-1" Click=@(() => OpenProduct(data.DisplayId)) Text="@data.DisplayId.ToString()" />
-                        </Template>
-                    </RadzenDataGridColumn>
                 </Columns>
             </RadzenDataGrid>
         </div>

@@ -30,6 +30,15 @@ public class ProductsController : ControllerBase
         return BadRequest();
     }
 
+    [HttpPost("SearchProducts")]
+    public async Task<IActionResult> SearchProducts([FromBody] SearchDto searchDto)
+    {
+        List<ItemDto> products = await _productsRepository.SearchProducts(searchDto);
+        if (products != null)
+            return Ok(products);
+        return BadRequest();
+    }
+
     [HttpGet("GetProductsByGroceryStore/{groceryStoreId}")]
     public async Task<IActionResult> GetProductsByGroceryStore(Guid groceryStoreId)
     {

@@ -1,6 +1,6 @@
 ﻿namespace Pathwaze.Shared.Models.Entities;
 
-public class Preferences
+public class Preferences : BaseEntity
 {
     public Guid Id { get; set; }
 }

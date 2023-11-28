@@ -1,7 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Pathwaze.Server.Interfaces;
-
-namespace Pathwaze.Server.Controllers;
+﻿namespace Pathwaze.Server.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

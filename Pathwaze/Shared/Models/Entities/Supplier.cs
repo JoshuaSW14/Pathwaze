@@ -1,15 +1,11 @@
 ﻿namespace Pathwaze.Shared.Models.Entities;
 
-public class Supplier
+public class Supplier : BaseEntity
 {
     public Guid Id { get; set; }
     public string Name { get; set; }
-    public DateTime LastUpdatedDate { get; set; }
-    public DateTime CreationDate { get; set; }
-    public bool IsDeleted { get; set; }
 
-    public virtual Address Address { get; set; }
-    public virtual List<Product> Products { get; set; }
-    public virtual List<GroceryStore> GroceryStores { get; set; }
+    public virtual List<Product>? Products { get; set; }
+    public virtual List<GroceryStore>? GroceryStores { get; set; }
 }
 

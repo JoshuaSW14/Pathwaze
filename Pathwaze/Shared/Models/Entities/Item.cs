@@ -12,7 +12,6 @@ public class Item : BaseEntity
     public Guid GroceryStoreId { get; set; }
 
     public virtual GroceryStore? GroceryStore { get; set; }
-    public virtual Supplier? Supplier { get; set; }
     public virtual Nutrition? Nutrition { get; set; }
     public virtual Location? Location { get; set; }
 }

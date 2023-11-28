@@ -1,8 +1,4 @@
-﻿using Microsoft.AspNetCore.Components.Authorization;
-using Microsoft.JSInterop;
-using System.Security.Claims;
-
-namespace Pathwaze.Client.AuthProviders;
+﻿namespace Pathwaze.Client.AuthProviders;
 
 public class CustomAuthStateProvider : AuthenticationStateProvider
 {
