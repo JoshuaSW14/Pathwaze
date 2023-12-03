@@ -1,0 +1,86 @@
+﻿@page "/"
+@page "/home"
+
+@using Microsoft.AspNetCore.Components.Authorization
+@using Pathwaze.Client.AuthProviders;
+
+@inject CustomAuthStateProvider authStateProvider
+
+<style>
+    .header-section{
+        background-color: #F4F5F6;
+        padding-top: 5rem;
+    }
+    .header-section h1{
+        font-size: 100px;
+        font-weight: bold;
+    }
+
+    .slideshow-section{
+        background-color: #FCFCFD;
+    }
+
+    .feature-section{
+        background-color: #FCFCFD;
+    }
+
+    .general-section-style {
+        height: 35rem;
+        padding-left: 10rem !important;
+        padding-right: 10rem !important;
+    }
+</style>
+
+
+<div class="header-section d-flex align-items-center general-section-style">
+    <div>
+        <span>
+            <AuthorizeView>
+                <Authorized>
+                    The user is authorized
+                </Authorized>
+                <NotAuthorized>
+                    The User is not authorized
+                </NotAuthorized>
+            </AuthorizeView>
+        </span>
+    </div>
+    <div class="col-6 d-flex flex-column">
+        <h1>Pathwaze</h1>
+        <span style="margin-top:2rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, est felis, sagittis viverra nulla mattis scelerisque. Eget cras integer.</span>
+        <div style="margin-top:2rem;">
+            <RadzenButton>Discover</RadzenButton>
+        </div>
+        
+    </div>
+    <div class="col-6 d-flex justify-content-center">
+        <RadzenImage Path="images/placeholder.png" Style="width: 15rem;" />
+    </div>
+</div>
+<div class="slideshow-section general-section-style">
+
+</div>
+<div class="suggestion-section general-section-style">
+
+</div>
+<div class="feature-section general-section-style">
+
+</div>
+<div class="reason-section general-section-style">
+
+</div>
+
+@code {
+    [CascadingParameter]
+    public Task<AuthenticationState>? AuthState { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        if (user.Identity!.IsAuthenticated)
+           Console.WriteLine($"Authenticated --------- {user.Identity.Name}");
+        else
+           Console.WriteLine("Not Authenticated ---------");
+    }
+}

@@ -1,0 +1,68 @@
+﻿@page "/discover"
+
+@inject IProductService ProductService
+
+@using Pathwaze.Shared.Models.Dtos;
+
+<style>
+    .page-container{
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    .banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border: 1px solid black;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+</style>
+
+<!-- Banner -->
+<div class="banner">
+    <p>Banner</p>
+</div>
+
+<div class="page-container">
+    <RadzenRow AlignItems="AlignItems.Start" Gap="1rem">
+        <RadzenColumn>
+            <RadzenDropDown @bind-Value=@searchDto.goceryStoreFilter Data=@groceryStores Style="width: 100%"/>
+        </RadzenColumn>
+        <RadzenColumn>
+            <RadzenDropDown @bind-Value=@searchDto.supplierFilter Data=@suppliers Style="width: 100%" />
+        </RadzenColumn>
+        <RadzenColumn>
+            <RadzenTextBox Placeholder="Search..." Change=@(args => OnSearch(args, "TextBox with placeholder")) Style="width: 100%" />
+        </RadzenColumn>
+    </RadzenRow>
+
+    <!-- Table -->
+    @foreach (var item in searchResults)
+    {
+        <RadzenCard>
+            <RadzenText TextStyle="TextStyle.Overline">@item.Name</RadzenText>
+            <RadzenText TextStyle="TextStyle.Overline">@item.Type</RadzenText>
+        </RadzenCard>
+    }
+
+</div>
+
+@code {
+    private List<string> suppliers { get; set; } = new List<string>();
+    private List<string>? groceryStores { get; set; } = new List<string>();
+    private string search { get; set; } = string.Empty;
+
+    private SearchDto searchDto { get; set; } = new SearchDto();
+    private List<ItemDto> searchResults { get; set; } = new();
+
+    private async void OnSearch(string value, string name)
+    {
+        Console.WriteLine($"{name} value changed to {value}");
+        searchDto.searchFilter = value;
+        searchResults = await ProductService.SearchProducts(searchDto);
+        StateHasChanged();
+    }
+}
