@@ -61,7 +61,7 @@
     private async void OnSearch(string value, string name)
     {
         Console.WriteLine($"{name} value changed to {value}");
-        searchDto.searchFilter = value;
+        searchDto.searchFilter = value; 
         searchResults = await ProductService.SearchProducts(searchDto);
         StateHasChanged();
     }
