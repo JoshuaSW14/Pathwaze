@@ -4,13 +4,15 @@ import uuid
 
 class UserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
+        print("HELLO WORLDDDDD")
         if not email:
             raise ValueError(_('Email must be set'))
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
-
+        user.set_password(password)
         user.save(using=self._db)
         return user
+
     def get_by_natural_key(self, email):
         return self.get(email=email)
 
@@ -40,6 +42,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         return self.email
 
     def set_password(self, raw_password: str | None) -> None:
+        print('User.set_password() called')
         return super().set_password(raw_password)
 
     class Meta:

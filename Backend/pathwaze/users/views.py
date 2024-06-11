@@ -12,24 +12,25 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('email', 'password', 'first_name', 'last_name')
-        extra_kwargs = {'password': {'write_only': True}}
 
     def create(self, validated_data):
-        password = validated_data.pop('password')
+        password = validated_data["password"]
+        print("register/create", password)
         user = User(**validated_data)
-        user.set_password(self, password)
-        user.save()
+        print(user.password)
+        print(user)
+        # user.create_user(email=validated_data["email"], password=password)
 
+        # user.set_password(self, password)
+        # user.save()
         return user
 
 class RegisterView(APIView):
     def post(self, request, *args, **kwargs):
         serializer = UserSerializer(data=request.data)
-        print(request.data)
-        if serializer.is_valid():
-            user = serializer.save()  # Save user to db along with associated Biometric
-            serialized_data = UserSerializer(user).data
-            return Response(serialized_data, status=status.HTTP_201_CREATED)
+        if serializer.is_valid(raise_exception=True):
+            user = serializer.save()
+            return Response(user, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class LoginView(APIView):
