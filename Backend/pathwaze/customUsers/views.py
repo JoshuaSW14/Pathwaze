@@ -7,11 +7,9 @@ from django.contrib.auth import authenticate
 # from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework import status
 from rest_framework import serializers
-# from django.contrib.auth.models import User
 from customUsers.models import CustomUser
 
 class UserSerializer(serializers.ModelSerializer):
-    #biometric_ids = serializers.SerializerMethodField()
 
     class Meta:
         model = CustomUser
@@ -22,9 +20,6 @@ class UserSerializer(serializers.ModelSerializer):
         password = validated_data.pop('password')
         user = CustomUser(**validated_data)
         user.set_password(password)
-        user.save()
-
-        #create biometric object
         user.save()
 
         return user
