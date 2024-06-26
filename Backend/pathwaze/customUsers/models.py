@@ -11,8 +11,6 @@ class CustomUserManager(BaseUserManager):
         user.set_password(password)
         user.save(using=self._db)
         return user
-    def get_by_natural_key(self, email):
-        return self.get(email=email)
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
     objects = CustomUserManager()

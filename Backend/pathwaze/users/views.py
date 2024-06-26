@@ -5,73 +5,42 @@ from django.contrib.auth import authenticate
 from rest_framework import status
 from rest_framework import serializers
 # from django.contrib.auth.models import User
-from users.models import User
+from users.models import User as UserRequest
 
 class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = User
+        model = UserRequest
         fields = ('email', 'password', 'first_name', 'last_name')
+        extra_kwargs = {'password': {'write_only': True}}
 
     def create(self, validated_data):
-        password = validated_data["password"]
-        print("register/create", password)
-        user = User(**validated_data)
-        print(user.password)
-        print(user)
-        # user.create_user(email=validated_data["email"], password=password)
+        password = validated_data.pop('password')
+        user = UserRequest(**validated_data)
+        user.set_password(password)
+        user.save()
 
-        # user.set_password(self, password)
-        # user.save()
         return user
 
 class RegisterView(APIView):
     def post(self, request, *args, **kwargs):
+        print("POST REQUEST - USERS")
         serializer = UserSerializer(data=request.data)
-        if serializer.is_valid(raise_exception=True):
-            user = serializer.save()
-            return Response(user, status=status.HTTP_201_CREATED)
+        if serializer.is_valid():
+            user = serializer.save()  # Save user to db along with associated Biometric
+            serialized_data = UserSerializer(user).data
+            return Response(serialized_data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-class LoginView(APIView):
-    def post(self, request):
-        username = request.data.get('email')
-        password = request.data.get('password')
-
-        user = authenticate(username=username, password=password)
-        if user is not None:
-            refresh = RefreshToken.for_user(user)
-            access_token = refresh.access_token
-            user_id = user.id
-            response_data = {
-                'refresh' : str(refresh),
-                'access' : str(access_token),
-                'user_id' : str(user_id),
-            }
-            return Response(response_data, status=status.HTTP_200_OK)
-        else:
-            return Response(status=status.HTTP_401_UNAUTHORIZED)
-
-class LogoutView(APIView):
-    def post(self, request):
-        try:
-            refresh_token = request.data["refresh_token"]
-            token = RefreshToken(refresh_token)
-            token.blacklist()
-            return Response(status=status.HTTP_205_RESET_CONTENT)
-        except Exception as e:
-            print(e)
-            return Response(status=status.HTTP_400_BAD_REQUEST)
 
 #Used for retrieving user information on account page
 class User(APIView):
     def get(self, request, user_id):
         try:
-            user = User.objects.get(id=user_id)
+            user = UserRequest.objects.get(id=user_id)
             serializer = UserSerializer(user)
 
             return Response(serializer.data, status=status.HTTP_200_OK)
-        except User.DoesNotExist:
+        except UserRequest.DoesNotExist:
             return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
             print(e)

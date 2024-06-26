@@ -1,7 +1,6 @@
 # Create your views here.
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth import authenticate
 
 # from rest_framework_simplejwt.tokens import RefreshToken
@@ -37,36 +36,6 @@ class RegisterView(APIView):
             serialized_data = UserSerializer(user).data
             return Response(serialized_data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-# class LoginView(APIView):
-#     def post(self, request):
-#         username = request.data.get('username')
-#         password = request.data.get('password')
-
-#         user = authenticate(username=username, password=password)
-#         if user is not None:
-#             refresh = RefreshToken.for_user(user)
-#             access_token = refresh.access_token
-#             user_id = user.id
-#             response_data = {
-#                 'refresh' : str(refresh),
-#                 'access' : str(access_token),
-#                 'user_id' : str(user_id),
-#             }
-#             return Response(response_data, status=status.HTTP_200_OK)
-#         else:
-#             return Response(status=status.HTTP_401_UNAUTHORIZED)
-
-# class LogoutView(APIView):
-#     def post(self, request):
-#         try:
-#             refresh_token = request.data["refresh_token"]
-#             token = RefreshToken(refresh_token)
-#             token.blacklist()
-#             return Response(status=status.HTTP_205_RESET_CONTENT)
-#         except Exception as e:
-#             print(e)
-#             return Response(status=status.HTTP_400_BAD_REQUEST)
 
 #Used for retrieving user information on account page
 class User(APIView):
