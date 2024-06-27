@@ -65,4 +65,4 @@ testem.log
 /coverage
 /libpeerconnection.log
 testem.log
-/typings
+/typings*.pyc
