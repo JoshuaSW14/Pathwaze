@@ -4,7 +4,6 @@ from django.contrib.auth import authenticate
 
 from rest_framework import status
 from rest_framework import serializers
-# from django.contrib.auth.models import User
 from users.models import User as UserRequest
 
 class UserSerializer(serializers.ModelSerializer):
@@ -27,12 +26,11 @@ class RegisterView(APIView):
         print("POST REQUEST - USERS")
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
-            user = serializer.save()  # Save user to db along with associated Biometric
+            user = serializer.save()
             serialized_data = UserSerializer(user).data
             return Response(serialized_data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-#Used for retrieving user information on account page
 class User(APIView):
     def get(self, request, user_id):
         try:
