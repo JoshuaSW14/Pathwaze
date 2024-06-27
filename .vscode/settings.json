@@ -1,0 +1,15 @@
+{
+    "editor.rulers": [80],
+    "files.trimTrailingWhitespace": true,
+    "editor.detectIndentation": false,
+    "[json][javascript][typescript][typescriptreact]": {"editor.tabSize": 2},
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "python.defaultInterpreterPath": "/Users/aidanwigmore/Desktop/PathwazeEnv/bin/python",
+    "pylint.args": [
+        "--load-plugins=pylint_django",
+        "--django-settings-module=serve.settings"
+    ],
+    "pylint.path": [
+        "/Users/aidanwigmore/Desktop/PathwazeEnv/bin/pylint",
+    ]
+}
